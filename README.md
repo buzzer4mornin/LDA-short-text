@@ -19,7 +19,7 @@ For empirical evaluations, paper uses BOPE and many other previous algorithms (O
 
 ### **Comparison of results:**
 
-![s2](./screenshot.png)
+![s1](./screenshot-1.png)
 
 As seen above, BOPE shows higher results across the different datasets.
 
