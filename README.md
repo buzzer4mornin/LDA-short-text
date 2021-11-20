@@ -16,10 +16,15 @@ For empirical evaluations, paper uses BOPE and many other previous algorithms (O
 | Twitter tweets | 1,457,687 | 10.14 | 89,474 | 
 | NYT-Titles | 1,664,127 | 5.15 | 55,488 | 
 
+&nbsp;
+&nbsp;
 
 ### **Comparison of results:**
 
 ![s1](./screenshot-1.png)
+
+&nbsp;
+&nbsp;
 
 As seen above, BOPE shows higher results across the different datasets.
 
