@@ -38,7 +38,6 @@ def read_setting(file_name):
     sets = list()
     vals = list()
     for i in range(len(settings)):
-        # print'%s\n'%(settings[i])
         if settings[i][0] == '#':
             continue
         set_val = settings[i].split(':')
@@ -48,7 +47,6 @@ def read_setting(file_name):
     ddict['num_docs'] = int(ddict['num_docs'])
     ddict['num_terms'] = int(ddict['num_terms'])
     ddict['num_topics'] = int(ddict['num_topics'])
-    ddict['user_size'] = int(ddict['user_size'])
     ddict['tops'] = int(ddict['tops'])
     ddict['iter_infer'] = int(ddict['iter_infer'])
     ddict['iter_train'] = int(ddict['iter_train'])
