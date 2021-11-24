@@ -22,14 +22,16 @@ def main():
     print('reading setting ...')
     ddict = utilities.read_setting(setting_file)
     saved_outputs_folder = f"{saved_outputs}/{ddict['num_topics']}_{ddict['alpha']}_{ddict['iter_infer']}_{ddict['iter_train']}/"
-    os.makedirs(saved_outputs_folder)
+    try:
+        os.makedirs(saved_outputs_folder)
+    except:
+        pass
 
     print('write setting ...')
     file_name = f'{output_folder}/settings.txt'
     file_name_saved = f'{saved_outputs_folder}/settings.txt'
     utilities.write_setting(ddict, file_name)
     utilities.write_setting(ddict, file_name_saved)
-
 
     """
     termids: A list whose each element is an array (terms ids), corresponding to a document.
@@ -62,7 +64,7 @@ def main():
     # exit()
 
     print('START!')
-    for i in range(1, ddict['iter_train']+1):
+    for i in range(1, ddict['iter_train'] + 1):
         print(f'\n*** iteration: {i} ***\n')
         time.sleep(2)
 
