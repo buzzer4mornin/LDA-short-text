@@ -25,6 +25,7 @@ For empirical evaluations, paper uses BOPE and many other previous algorithms (O
 
     NPMI measurements helps us to see the coherence or seman- tic quality of individual topics. According to [this paper](https://www.ams.org/journals/tran/1943-054-03/S0002-9947-1943-0009263-7/S0002-9947-1943-0009263-7.pdf), NPMI agrees well with human evaluation on interpretability of topic models.
 
+
 #### **Comparison of results:**
 
 ![s1](./screenshot-1.png)

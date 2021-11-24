@@ -7,9 +7,9 @@ from nltk.tokenize import RegexpTokenizer
 import re
 
 """
-[M] [word_1]:[count] [word_2]:[count] ...  [word_N]:[count]
+[M] [term_1]:[count] [term_2]:[count] ...  [term_N]:[count]
 [M]     - number of unique words in plot
-[word]  - integer which is index of the word in vocabulary
+[term]  - integer which is index of the word in vocabulary
 [count] - how many times each word appeared in the plot
 
 """
@@ -77,8 +77,8 @@ def get_vocabulary():
     # Create Vocabulary textfile
     vocab = sorted(set(list(terms)))
     with open("vocab.txt", 'w', encoding='utf-8') as f:
-        for word in vocab:
-            f.write(word + "\n")
+        for term in vocab:
+            f.write(term + "\n")
 
     end = time.time()
     print('-*-*-* Successfully Created "vocab.txt" *-*-*-')

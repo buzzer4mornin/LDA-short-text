@@ -7,7 +7,7 @@
 
 def main():
     # -------------------------------------------- Set Config ----------------------------------------------------------
-    docs_file = "./input-data/docs"
+    docs_file = "./input-data/docs.txt"
     setting_file = "./input-data/settings.txt"
     output_folder = "./output-data/"
 
@@ -25,23 +25,23 @@ def main():
     utilities.write_setting(ddict, file_name)
 
     """
-    wordids: A list whose each element is an array (words ids), corresponding to a document.
-             Each element of the array is index of a unique word in the vocabulary.
+    termids: A list whose each element is an array (terms ids), corresponding to a document.
+             Each element of the array is index of a unique term in the vocabulary.
 
-    wordcts: A list whose each element is an array (word counts), corresponding to a document.
-             Each element of the array says how many time the corresponding term in wordids appears
+    termcts: A list whose each element is an array (term counts), corresponding to a document.
+             Each element of the array says how many time the corresponding term in termids appears
              in the document.
 
     E.g,
     First document = "Movie is about happy traveler"
 
-    wordids[0] = array([127, 55, 284, 36, 47], dtype=int32)
-    first document contains words whose indexes are 127th, 55th, 284th, 36th and 47th in vocabulary
+    termids[0] = array([127, 55, 284, 36, 47], dtype=int32)
+    first document contains terms whose indexes are 127th, 55th, 284th, 36th and 47th in vocabulary
 
-    wordcts[0] = array([1, 1, 1, 1, 1], dtype=int32)
-    in first document, words whose indexes are 127, 55, 284, 36, 47 appears 1, 1, 1, 1, 1 times respectively.
+    termcts[0] = array([1, 1, 1, 1, 1], dtype=int32)
+    in first document, terms whose indexes are 127, 55, 284, 36, 47 appears 1, 1, 1, 1, 1 times respectively.
      """
-    wordids, wordcts = utilities.read_data(docs_file)
+    termids, termcts = utilities.read_data(docs_file)
 
     # -------------------------------------- Initialize Algorithm --------------------------------------------------
     print('initializing LDA algorithm ...\n')
@@ -60,7 +60,7 @@ def main():
         time.sleep(2)
 
         # Run single EM step and return attributes
-        algo.run_EM(wordids, wordcts, i)
+        algo.run_EM(termids, termcts, i)
 
         # if i == some_iteration : --> save files
 
@@ -82,9 +82,11 @@ if __name__ == '__main__':
     from LDA import MyLDA
 
     NUM_THREADS = "1"
-    os.environ["OMP_NUM_THREADS"], os.environ["OPENBLAS_NUM_THREADS"], \
-        os.environ["MKL_NUM_THREADS"], os.environ["VECLIB_MAXIMUM_THREADS"], \
-        os.environ["NUMEXPR_NUM_THREADS"] = NUM_THREADS
+    os.environ["OMP_NUM_THREADS"] = NUM_THREADS
+    os.environ["OPENBLAS_NUM_THREADS"] = NUM_THREADS
+    os.environ["MKL_NUM_THREADS"] = NUM_THREADS
+    os.environ["VECLIB_MAXIMUM_THREADS"] = NUM_THREADS
+    os.environ["NUMEXPR_NUM_THREADS"] = NUM_THREADS
 
     sys.path.insert(0, './common')
     import utilities

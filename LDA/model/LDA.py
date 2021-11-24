@@ -3,24 +3,24 @@ import numpy as np
 
 
 class MyLDA:
-    def __init__(self, num_docs, num_words, num_topics, alpha, iter_infer):
+    def __init__(self, num_docs, num_terms, num_topics, alpha, iter_infer):
         """ Click to read more
 
         Arguments:
             num_docs: Number of documents
-            num_words: Number of unique words in the corpus (length of the vocabulary).
+            num_terms: Number of unique terms in the corpus (length of the vocabulary).
             num_topics: Number of topics shared by the whole corpus.
             alpha: Hyperparameter for prior on topic mixture theta.
             iter_infer: Number of iterations for BOPE algorithm
           """
         self.num_docs = num_docs
-        self.num_words = num_words
+        self.num_terms = num_terms
         self.num_topics = num_topics
         self.alpha = alpha
         self.iter_infer = iter_infer
 
         # Initialize beta (topics)
-        self.beta = np.random.rand(self.num_topics, self.num_words) + 1e-10
+        self.beta = np.random.rand(self.num_topics, self.num_terms) + 1e-10
         beta_norm = self.beta.sum(axis=1)
         self.beta /= beta_norm[:, np.newaxis]
 
@@ -29,24 +29,24 @@ class MyLDA:
         theta_norm = self.theta.sum(axis=1)
         self.theta /= theta_norm[:, np.newaxis]
 
-    def run_EM(self, wordids, wordcts, GLOB_ITER):
+    def run_EM(self, termids, termcts, GLOB_ITER):
         """ Click to read more
 
-        First does an E step on given wordids and wordcts to update theta,
+        First does an E step on given termids and termcts to update theta,
         then uses the result to update betas in M step.
         """
         self.GLOB_ITER = GLOB_ITER
 
         # E - expectation step
-        self.e_step(wordids, wordcts)
+        self.e_step(termids, termcts)
 
         # M - maximization step
-        self.m_step(wordids, wordcts)
+        self.m_step(termids, termcts)
 
-    def e_step(self, wordids, wordcts):
+    def e_step(self, termids, termcts):
         """ Does E step: update theta for all documents """
         for d in range(self.num_docs):
-            thetad = self.update_theta(wordids[d], wordcts[d], d)
+            thetad = self.update_theta(termids[d], termcts[d], d)
             self.theta[d, :] = thetad
             print(f" ** UPDATE theta over {d+1}/{self.num_docs} documents |iter:{self.GLOB_ITER}| ** ")
 
@@ -56,8 +56,8 @@ class MyLDA:
         Updates theta for a given document using BOPE algorithm (i.e, MAP Estimation With Bernoulli Randomness).
 
         Arguments:
-        ids: an element of wordids, corresponding to a document.
-        cts: an element of wordcts, corresponding to a document.
+        ids: an element of termids, corresponding to a document.
+        cts: an element of termcts, corresponding to a document.
 
         Returns updated theta.
         """
@@ -126,13 +126,13 @@ class MyLDA:
                 x = x + alpha * (beta[index_upper, :] - x)
         return theta
 
-    def m_step(self, wordids, wordcts):
+    def m_step(self, termids, termcts):
         """ Does M step: update global variables beta """
 
         # Compute intermediate beta which is denoted as "unit beta"
-        beta = np.zeros((self.num_topics, self.num_words), dtype=float)
+        beta = np.zeros((self.num_topics, self.num_terms), dtype=float)
         for d in range(self.num_docs):
-            beta[:, wordids[d]] += np.outer(self.theta[d], wordcts[d])
+            beta[:, termids[d]] += np.outer(self.theta[d], termcts[d])
         # Check zeros index
         beta_sum = beta.sum(axis=0)
         ids = np.where(beta_sum != 0)[0]
@@ -141,5 +141,5 @@ class MyLDA:
         unit_beta_norm = unit_beta.sum(axis=1)
         unit_beta /= unit_beta_norm[:, np.newaxis]
         # Update beta
-        self.beta = np.zeros((self.num_topics, self.num_words), dtype=float)
+        self.beta = np.zeros((self.num_topics, self.num_terms), dtype=float)
         self.beta[:, ids] += unit_beta
