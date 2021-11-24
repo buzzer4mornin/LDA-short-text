@@ -10,8 +10,9 @@ def main():
     docs_file = "./input-data/docs.txt"
     setting_file = "./input-data/settings.txt"
     output_folder = "./output-data/"
+    saved_outputs = "./saved-outputs/"
 
-    # Create model folder if it doesn't exist
+    # Create output folder if it doesn't exist
     if os.path.exists(output_folder):
         shutil.rmtree(output_folder)
     os.makedirs(output_folder)
@@ -20,9 +21,15 @@ def main():
     # Read & write settings into model folder
     print('reading setting ...')
     ddict = utilities.read_setting(setting_file)
+    saved_outputs_folder = f"{saved_outputs}/{ddict['num_topics']}_{ddict['alpha']}_{ddict['iter_infer']}_{ddict['iter_train']}/"
+    os.makedirs(saved_outputs_folder)
+
     print('write setting ...')
     file_name = f'{output_folder}/settings.txt'
+    file_name_saved = f'{saved_outputs_folder}/settings.txt'
     utilities.write_setting(ddict, file_name)
+    utilities.write_setting(ddict, file_name_saved)
+
 
     """
     termids: A list whose each element is an array (terms ids), corresponding to a document.
@@ -69,10 +76,9 @@ def main():
     # ----------------------------------------- Write Results ------------------------------------------------------
     list_tops = utilities.list_top(algo.beta, ddict['tops'])
     print("\nsaving the final results.. please wait..")
-    utilities.write_file(output_folder, list_tops, algo)
+    utilities.write_file(output_folder, saved_outputs_folder, list_tops, algo)
 
 
-##########################
 if __name__ == '__main__':
     import os
     import shutil

@@ -1,11 +1,28 @@
 import sys
+import os
 import numpy as np
 import numpy_indexed
 import pandas as pd
 import pickle
 from sklearn.model_selection import StratifiedKFold
 import warnings
+
 warnings.filterwarnings("ignore")
+
+
+def list_top(beta, tops):
+    min_float = -sys.float_info.max
+    num_tops = beta.shape[0]
+    list_tops = list()
+    for k in range(num_tops):
+        top = list()
+        arr = np.array(beta[k, :], copy=True)
+        for t in range(tops):
+            index = arr.argmax()
+            top.append(index)
+            arr[index] = min_float
+        list_tops.append(top)
+    return list_tops
 
 
 def read_data(filename):
@@ -89,11 +106,17 @@ def print_diff_list_tops(list_tops, prev_list_tops, i):
         print("Difference:", diff_count)
 
 
-def write_file(output_folder, list_tops, algo):
-    list_tops_file_name = f'{output_folder}/list_tops.txt'
-    write_topic_top(list_tops, list_tops_file_name)
+def write_file(output_folder, saved_outputs_folder, list_tops, algo):
 
-    files = [attr for attr in dir(algo) if attr in ["beta", "theta"]]
-    def file_locator(x): return f'{output_folder}/{str(x)}'
-    for file in files:
-        np.save(file_locator(file), getattr(algo, file))
+    def write(folder):
+        list_tops_file_name = f'{folder}/list_tops.txt'
+        write_topic_top(list_tops, list_tops_file_name)
+        files = [attr for attr in dir(algo) if attr in ["beta", "theta"]]
+
+        def file_locator(x): return f'{folder}/{str(x)}'
+
+        for file in files:
+            np.save(file_locator(file), getattr(algo, file))
+
+    write(output_folder)
+    write(saved_outputs_folder)
