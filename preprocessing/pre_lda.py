@@ -137,4 +137,5 @@ def get_input_docs(vocab, eng_comments):
 
 if __name__ == '__main__':
     vocab, eng_comments = get_vocabulary()
-    get_input_docs(vocab, eng_comments)
+    print(len(eng_comments))
+    #get_input_docs(vocab, eng_comments)
