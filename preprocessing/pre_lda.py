@@ -98,6 +98,8 @@ def get_input_docs(vocab, eng_comments):
     term_vs_index = {v_term: v_index for v_term, v_index in zip(vocab, range(len(vocab)))}
     stop_words = set(stopwords.words('english'))
     for comment in eng_comments:
+        to_be_saved = comment
+
         # TODO: ~~~ SEPARATOR ~~~
         # flag = False
         # if "COLUMN ENDS RIGHT HERE" in plt:
@@ -130,6 +132,9 @@ def get_input_docs(vocab, eng_comments):
             # else:
             #    f.write(str(unique_terms) + " " + term_counts + "\n")
             # --------------------------------------------------------
+        with open("eng_comments.txt", 'a', encoding='utf-8') as f:
+            f.write(to_be_saved + "\n")
+
     end = time.time()
     print('\n-*-*-* Successfully Created "docs.txt" *-*-*-')
     print("Execution time: {:.2f} min".format((end - start)/60))
@@ -137,5 +142,4 @@ def get_input_docs(vocab, eng_comments):
 
 if __name__ == '__main__':
     vocab, eng_comments = get_vocabulary()
-    print(len(eng_comments))
-    #get_input_docs(vocab, eng_comments)
+    get_input_docs(vocab, eng_comments)

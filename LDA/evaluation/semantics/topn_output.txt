@@ -1,25 +1,15 @@
-social / culture         -> continue diversity inclusion culture leadership ways new leaders diverse different focus also need feel support environment management speak make open
-career / life            -> communication career opportunities covid culture remote health diversity balance prospects compensation flexibility inclusion development recognition learning pay life home well
-feel about org           -> great place job feel keep health think like good would make continue security care time well always future better right
-feel about self          -> get would job new years much time better year need make feel resources done take one also long many team
-org. flow                -> execution focus customer processes communication tools making decision speed infrastructure efficiency innovation strategy prospects empowerment culture info on competition covid meetings
-org. decisions           -> decisions making decision level make management right need business take processes organization time many process needs levels empower get leadership
-org. politics            -> prospects political politics focus feel stay business social issues leadership diversity mission like one views need ceo get stop many
-team+management          -> managers team management need manager support leadership feel leaders time like listen level needs feedback make resources well get new
-development              -> time resources new systems training need job many support use get would better make system like much provide technology one
-product market           -> new future continue products pipeline need focus business development keytruda leadership product market great change patients covid also make excited
-org. processes / barrier -> processes many need process barriers time resources systems make business new change support simplify changes focus global improve better projects
-work-life daily          -> life balance time home hours day meetings need stress resources better support personal many take feel get continue help also
-work-life pandemic       -> home office pandemic continue time flexibility remote would flexible covid allow support life back site remotely balance need year like
-career                   -> opportunities career talent development job within level salary new better growth roles would years provide make role get experience increase
-customers                -> customers sales field need resources many customer compliance get time job like virtual oncology needs new business restrictions also reps
-
-
-
-
-
-
-
-
-Our aim is to have topics to be kind of separate topics... because if two topics are very similar to each other,
-then probably we have to decrease the number of topics to be extracted from corpus and these 2 topics will shrink into 1 topic as a result.  (!! This is optimisation process !!)
+management                        --> people employees company change management feel need merck make like work business leadership manager good support feedback would many working
+politics/products                 --> company employees focus products continue politics merck political people work keep business need stay patients market needs listen employee make
+customers/sales                   --> customers merck need sales resources field work many company would compliance like customer time needs feel also virtual access business
+org. process/barrier              --> work processes systems process need time many make resources business people barriers company support working better change improve simplify digital
+org. flow                         --> execution focus customer processes communication tools making decision speed infrastructure efficiency empowerment information innovation culture strategy training covid meetings teamwork
+diversity/inclusion               --> diversity inclusion people company work merck continue employees leadership culture feel managers management focus leaders speak diverse make working support
+remote + covid                    --> work working home office employees pandemic continue time people would company covid remote merck site back flexibility ways need feel
+products                          --> future company merck pipeline leadership products need like keytruda changes work covid excited feel business people would concerned term change
+touches many parts???             --> prospects health compensation diversity communication recognition culture great inclusion competition place teamwork well covid benefits innovation strategy accomplishment recruitment values
+work-life bal. (covid+work)       --> communication working remote balance covid flexibility workload home life culture burnout site health meetings training feedback safety climate diversity well
+emp+talent+manager                --> employees people work company level merck managers team talent within salary need better support resources also management increase make roles
+work-life bal. (resource/support) --> work life balance employees continue support working home resources time better people personal pandemic flexibility company need provide flexible stress
+feel about merck / mission        --> merck company work employees great people continue feel place think make working good mission need would keep better like future
+working workload                  --> work time people need working many employees hours resources meetings feel take company workload balance life team also make done
+career                            --> opportunities career development learning promotion training growth employees communication company people employee work culture continue provide diversity compensation support advancement

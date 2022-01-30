@@ -90,7 +90,7 @@ def write_setting(ddict, file_name):
     f.close()
 
 
-def print_diff_list_tops(list_tops, prev_list_tops, i):
+def print_diff_list_tops_v2(list_tops, prev_list_tops, i):
     if i == 0:
         num_topics = len(list_tops)
         tops = len(list_tops[0])
@@ -106,8 +106,15 @@ def print_diff_list_tops(list_tops, prev_list_tops, i):
         print("Difference:", diff_count)
 
 
-def write_file(output_folder, saved_outputs_folder, list_tops, algo):
+def print_diff_list_tops(list_tops, prev_list_tops):
+    top_ns = len(list_tops[0])
+    diff_count = 0
+    for i, j in zip(prev_list_tops, list_tops):
+        diff_count += top_ns - len(list(set(i) & set(j)))
+    print("Difference:", diff_count)
 
+
+def write_file(output_folder, saved_outputs_folder, list_tops, algo):
     def write(folder):
         list_tops_file_name = f'{folder}/list_tops.txt'
         write_topic_top(list_tops, list_tops_file_name)

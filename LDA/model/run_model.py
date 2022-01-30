@@ -63,6 +63,8 @@ def main():
     # utilities.write_file(output_folder, list_tops, algo, 1)
     # exit()
 
+    prev_list_tops = utilities.list_top(algo.beta, ddict['tops'])
+
     print('START!')
     for i in range(1, ddict['iter_train'] + 1):
         print(f'\n*** iteration: {i} ***\n')
@@ -70,6 +72,15 @@ def main():
 
         # Run single EM step and return attributes
         algo.run_EM(termids, termcts, i)
+
+        # List Tops Difference
+        print("-------")
+        print(f"Iteration: {i}")
+        list_tops = utilities.list_top(algo.beta, ddict['tops'])
+        utilities.print_diff_list_tops(list_tops, prev_list_tops)
+        time.sleep(10)
+        prev_list_tops = list_tops
+        print("-------")
 
         # if i == some_iteration : --> save files
 

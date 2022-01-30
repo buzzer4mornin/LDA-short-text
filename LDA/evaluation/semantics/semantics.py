@@ -1,12 +1,24 @@
-import sys
-import math
 import numpy as np
-import os
+from random import randrange
 
-#t = np.load("./theta.npy")
-#t = t[33736:36583, :]
-#t = t.sum(axis=0)/t.shape[0]
-#print(t*100)
+theta = np.load("theta.npy")
+print(theta.shape)
+with open("eng_comments.txt", 'r', encoding='utf-8') as f:
+    eng_comments = f.readlines()
 
-t = np.load("./theta.npy")
-print(t.shape)
+
+def random_picker(min_length, eng_comments, theta):
+    while True:
+        i = randrange(len(eng_comments))
+        if len(eng_comments[i].split(" ")) > min_length:
+            print(eng_comments[i])
+            print(theta[i, :])
+            break
+
+
+random_picker(15, eng_comments, theta)
+
+
+
+
+
