@@ -5,6 +5,7 @@ from langdetect import detect
 from nltk.corpus import stopwords
 from nltk.tokenize import RegexpTokenizer
 import re
+import random
 
 """
 [M] [term_1]:[count] [term_2]:[count] ...  [term_N]:[count]
@@ -88,7 +89,7 @@ def get_vocabulary():
     return vocab, eng_comments
 
 
-def get_input_docs(vocab, eng_comments):
+def get_input_docs(vocab, eng_comments, train_test_split):
     """
     Create input text file for LDA
     """
@@ -98,7 +99,7 @@ def get_input_docs(vocab, eng_comments):
     term_vs_index = {v_term: v_index for v_term, v_index in zip(vocab, range(len(vocab)))}
     stop_words = set(stopwords.words('english'))
     for comment in eng_comments:
-        to_be_saved = comment
+        comment_readable = comment
 
         # TODO: ~~~ SEPARATOR ~~~
         # flag = False
@@ -123,17 +124,46 @@ def get_input_docs(vocab, eng_comments):
         if unique_terms == 0:
             continue
         term_counts = str(term_counts).replace("{", "").replace("}", "").replace(" ", "").replace(",", " ")
-        with open("docs.txt", 'a', encoding='utf-8') as f:
-            f.write(str(unique_terms) + " " + term_counts + "\n")
-            # TODO: ~~~ SEPARATOR ~~~
-            # if flag:
-            #    print("yes")
-            #    f.write(f"{plt} \n")
-            # else:
-            #    f.write(str(unique_terms) + " " + term_counts + "\n")
-            # --------------------------------------------------------
-        with open("eng_comments.txt", 'a', encoding='utf-8') as f:
-            f.write(to_be_saved + "\n")
+
+        # WRITE TO FILES:
+        # TRAIN TEST SPLIT of comments
+        if random.uniform(0, 1) < train_test_split:
+            with open("docs.txt", 'a', encoding='utf-8') as f:
+                f.write(str(unique_terms) + " " + term_counts + "\n")
+                # TODO: ~~~ SEPARATOR ~~~
+                # if flag:
+                #    print("yes")
+                #    f.write(f"{plt} \n")
+                # else:
+                #    f.write(str(unique_terms) + " " + term_counts + "\n")
+                # --------------------------------------------------------
+            with open("eng_comments.txt", 'a', encoding='utf-8') as f:
+                f.write(comment_readable + "\n")
+        else:
+            if random.uniform(0, 1) < train_test_split:
+                with open("docs_test_part_1.txt", 'a', encoding='utf-8') as f:
+                    f.write(str(unique_terms) + " " + term_counts + "\n")
+                    # TODO: ~~~ SEPARATOR ~~~
+                    # if flag:
+                    #    print("yes")
+                    #    f.write(f"{plt} \n")
+                    # else:
+                    #    f.write(str(unique_terms) + " " + term_counts + "\n")
+                    # --------------------------------------------------------
+                with open("eng_comments_test_part_1.txt", 'a', encoding='utf-8') as f:
+                    f.write(comment_readable + "\n")
+            else:
+                with open("docs_test_part_2.txt", 'a', encoding='utf-8') as f:
+                    f.write(str(unique_terms) + " " + term_counts + "\n")
+                    # TODO: ~~~ SEPARATOR ~~~
+                    # if flag:
+                    #    print("yes")
+                    #    f.write(f"{plt} \n")
+                    # else:
+                    #    f.write(str(unique_terms) + " " + term_counts + "\n")
+                    # --------------------------------------------------------
+                with open("eng_comments_test_part_2.txt", 'a', encoding='utf-8') as f:
+                    f.write(comment_readable + "\n")
 
     end = time.time()
     print('\n-*-*-* Successfully Created "docs.txt" *-*-*-')
@@ -142,4 +172,4 @@ def get_input_docs(vocab, eng_comments):
 
 if __name__ == '__main__':
     vocab, eng_comments = get_vocabulary()
-    get_input_docs(vocab, eng_comments)
+    get_input_docs(vocab, eng_comments, train_test_split = 0.8)

@@ -21,6 +21,7 @@ def print_topics(vocab_file, nwords, result_file):
             with open(result_file, "a") as r:
                 r.write(converts + "\n")
 
+
 if __name__ == '__main__':
 
     list_tops = "../../showcase_50_50/list_tops.txt"
