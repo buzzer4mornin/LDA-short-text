@@ -3,12 +3,12 @@ from random import randrange
 
 global theta, eng_comments, auto_topics, manual_topics
 
-theta = np.load("theta.npy")
+theta = np.load("./../../output-data/theta.npy")
 # print(theta.shape)
 
-with open("eng_comments.txt", 'r', encoding='utf-8') as f:
+with open("./../../input-data/eng_comments.txt", 'r', encoding='utf-8') as f:
     eng_comments = f.readlines()
-with open("topn_output.txt", 'r', encoding='utf-8') as f:
+with open("./../../output-data/topn_output.txt", 'r', encoding='utf-8') as f:
     auto_topics = f.readlines()
 
 manual_topics = ["management", "politics/products", "customers/sales", "org. process/barrier", "org. infrastructure",

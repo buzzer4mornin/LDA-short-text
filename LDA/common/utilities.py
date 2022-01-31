@@ -1,6 +1,7 @@
 import sys
 import os
 import numpy as np
+import per_vb
 # import numpy_indexed
 import pandas as pd
 import pickle
@@ -47,6 +48,18 @@ def read_data(filename):
     fp.close()
     return wordids, wordcts
 
+
+def read_data_for_perpl(test_data_folder):
+    filename_part1 = f'{test_data_folder}/docs_test_part_1.txt'
+    filename_part2 = f'{test_data_folder}/docs_test_part_2.txt'
+    wordids_1, wordcts_1 = read_data(filename_part1)
+    wordids_2, wordcts_2 = read_data(filename_part2)
+    return wordids_1, wordcts_1, wordids_2, wordcts_2
+
+def compute_perplexities_vb(beta, alpha, eta, max_iter, wordids_1, wordcts_1, wordids_2, wordcts_2):
+    vb = per_vb.VB(beta, alpha, eta, max_iter)
+    LD2 = vb.compute_perplexity(wordids_1, wordcts_1, wordids_2, wordcts_2)
+    return LD2
 
 def read_setting(file_name):
     f = open(file_name, 'r')
@@ -114,10 +127,25 @@ def print_diff_list_tops(list_tops, prev_list_tops):
     print("Difference:", diff_count)
 
 
+def print_topics(vocab_file, nwords, result_file):
+    with open(vocab_file, 'r') as f:
+        vocab = f.readlines()
+
+    vocab = list(map(lambda x: x.strip(), vocab))
+    vocab_index = {i: w for i, w in zip(range(len(vocab)), vocab)}
+
+    for l in nwords:
+        converts = list(map(lambda x: vocab_index[int(x)], l))
+        converts = " ".join(converts)
+        with open(result_file, "a") as r:
+            r.write(converts + "\n")
+
+
 def write_file(output_folder, saved_outputs_folder, list_tops, algo):
     def write(folder):
         list_tops_file_name = f'{folder}/list_tops.txt'
         write_topic_top(list_tops, list_tops_file_name)
+
         files = [attr for attr in dir(algo) if attr in ["beta", "theta"]]
 
         def file_locator(x): return f'{folder}/{str(x)}'
@@ -127,3 +155,8 @@ def write_file(output_folder, saved_outputs_folder, list_tops, algo):
 
     write(output_folder)
     write(saved_outputs_folder)
+
+    vocab_file = "./input-data/vocab.txt"
+    result_file = f"{output_folder}/topn_output.txt"
+    print_topics(vocab_file, list_tops, result_file)
+

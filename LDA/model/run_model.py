@@ -7,10 +7,11 @@
 
 def main():
     # -------------------------------------------- Set Config ----------------------------------------------------------
-    docs_file = "./input-data/docs.txt"
-    setting_file = "./input-data/settings.txt"
-    output_folder = "./output-data/"
-    saved_outputs = "./saved-outputs/"
+    input_folder = "./input-data"
+    output_folder = "./output-data"
+    saved_outputs = "./saved-outputs"
+    docs_file = f"{input_folder}/docs.txt"
+    setting_file = f"{input_folder}/settings.txt"
 
     # Create output folder if it doesn't exist
     if os.path.exists(output_folder):
@@ -51,6 +52,7 @@ def main():
     in first document, terms whose indexes are 127, 55, 284, 36, 47 appears 1, 1, 1, 1, 1 times respectively.
      """
     termids, termcts = utilities.read_data(docs_file)
+    wordids_1, wordcts_1, wordids_2, wordcts_2 = utilities.read_data_for_perpl(input_folder)
 
     # -------------------------------------- Initialize Algorithm --------------------------------------------------
     print('initializing LDA algorithm ...\n')
@@ -78,6 +80,9 @@ def main():
         utilities.print_diff_list_tops(list_tops, prev_list_tops)
         time.sleep(10)
         prev_list_tops = list_tops
+
+        LD2 = utilities.compute_perplexities_vb(algo.beta, ddict['alpha'], 0.01, ddict['iter_infer'], wordids_1, wordcts_1, wordids_2, wordcts_2)
+        print(LD2)
 
         # if i == some_iteration : --> save files
 

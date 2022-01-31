@@ -201,6 +201,7 @@ adap
 adapt
 adaptability
 adaptable
+adaptarse
 adaptation
 adaptations
 adapted
@@ -253,7 +254,6 @@ adjuvants
 admin
 administer
 administered
-administratif
 administration
 administrations
 administrativ
@@ -807,6 +807,7 @@ arranged
 arrangement
 arrangements
 arranging
+arrastramos
 arrive
 arrived
 arriving
@@ -1042,6 +1043,7 @@ awful
 awhile
 awkward
 awkwardness
+ayant
 aybe
 azienda
 azmi
@@ -1255,6 +1257,7 @@ beneath
 benefices
 beneficial
 beneficials
+beneficios
 beneficts
 benefiits
 benefit
@@ -1645,7 +1648,6 @@ buildings
 builds
 builiding
 built
-buisiness
 buisness
 bulding
 bulilding
@@ -1771,6 +1773,7 @@ camaraderie
 cambia
 cambian
 cambio
+cambios
 came
 camera
 cameras
@@ -1816,7 +1819,6 @@ capabilities
 capability
 capable
 capably
-capaciteit
 capacities
 capacity
 capas
@@ -2137,6 +2139,7 @@ claimable
 claimed
 claiming
 claims
+claire
 claras
 clarification
 clarified
@@ -2685,6 +2688,7 @@ consevertive
 consider
 considerable
 considerably
+considerar
 considerarion
 considerate
 consideration
@@ -2727,6 +2731,7 @@ constraint
 constraints
 construct
 constructed
+constructif
 construction
 constructive
 constructively
@@ -3847,6 +3852,7 @@ disjointed
 dislike
 dismal
 dismantling
+disminuir
 dismiss
 dismissals
 dismissed
@@ -4401,6 +4407,7 @@ empowernement
 empowernment
 empowers
 empowring
+empregado
 empresa
 emptiness
 empty
@@ -4666,6 +4673,7 @@ estimates
 estimating
 estimations
 estress
+estrés
 está
 eternal
 eternally
@@ -5578,13 +5586,13 @@ furthest
 furture
 furure
 futile
+futur
 future
 futures
 futuristic
 gage
 gagging
 gagner
-gahm
 gain
 gained
 gaining
@@ -6103,6 +6111,7 @@ heroes
 heroic
 heroics
 heros
+herramientas
 hesitance
 hesitancy
 hesitant
@@ -6459,6 +6468,7 @@ implant
 imple
 implememted
 implement
+implementar
 implementation
 implementations
 implemented
@@ -6882,7 +6892,6 @@ insurance
 insurances
 insure
 insuring
-insurmontable
 insurmountable
 insurrection
 intact
@@ -7788,6 +7797,7 @@ madeleine
 madison
 madness
 madrid
+maggiore
 magmt
 magnet
 magnificent
@@ -7844,7 +7854,6 @@ manager
 managerial
 managerment
 managers
-managerの育成に注力する
 manages
 managing
 managment
@@ -7858,6 +7867,7 @@ mandatories
 mandatory
 mandos
 manegement
+manera
 maneuver
 maneuvered
 manger
@@ -7876,6 +7886,7 @@ manor
 manpower
 mantain
 mantenido
+manter
 mantra
 manual
 manually
@@ -8037,7 +8048,6 @@ mediums
 medlegal
 meds
 meehan
-meer
 meet
 meeting
 meetingless
@@ -8402,7 +8412,6 @@ moves
 movies
 moving
 mrna
-mrに語れるdistrict
 msft
 msls
 mstat
@@ -8694,6 +8703,7 @@ nuanced
 nuances
 nuasvasive
 nucleic
+nuestro
 nuevas
 nuevos
 nuggets
@@ -8986,6 +8996,7 @@ original
 originally
 originial
 orion
+oroduct
 oroptions
 orthogonally
 orwellian
@@ -9451,6 +9462,7 @@ permeated
 permeates
 permenant
 permet
+permettere
 permettra
 permissible
 permission
@@ -9644,7 +9656,6 @@ planear
 planed
 planes
 planet
-planification
 planing
 planned
 planner
@@ -9655,6 +9666,7 @@ plant
 planted
 planting
 plants
+planの策定
 plastic
 plastics
 plate
@@ -9780,6 +9792,7 @@ posed
 poses
 posibilites
 posing
+positif
 position
 positioned
 positioning
@@ -9817,6 +9830,7 @@ potency
 potent
 potential
 potentially
+poter
 potus
 poultry
 pound
@@ -10031,6 +10045,7 @@ privileges
 privy
 prized
 prizes
+proactiva
 proactive
 proactively
 proactiveness
@@ -10072,6 +10087,7 @@ procesure
 procing
 procrastinates
 procrastination
+procurar
 procure
 procured
 procurement
@@ -10198,6 +10214,7 @@ proplr
 proponent
 proponha
 proporcionado
+proporcionando
 proportion
 proportional
 proportionally
@@ -10492,6 +10509,7 @@ reacting
 reaction
 reactionary
 reactions
+reactiva
 reactive
 reactively
 reactivity
@@ -11123,6 +11141,7 @@ restarting
 restaurant
 restaurants
 rested
+rester
 resting
 restoration
 restore
@@ -11504,7 +11523,6 @@ sayers
 saying
 says
 saúde
-sbu的工作環境和團隊核心價值
 scale
 scaled
 scales
@@ -11668,6 +11686,7 @@ semester
 semi
 seminars
 semplification
+sempre
 senate
 senators
 sence
@@ -12686,6 +12705,7 @@ successors
 succinct
 succsessfull
 succumbing
+sucediendo
 sucess
 suchl
 suck
@@ -13255,7 +13275,6 @@ todays
 todd
 todos
 toeing
-toekennen
 together
 togetherness
 togethers
@@ -14499,7 +14518,6 @@ yeti
 yield
 yielding
 yields
-ying
 yoga
 young
 younger
@@ -14522,8 +14540,10 @@ zuprevo
 zurich
 évolutions
 ótima
+ในการทำ
 コロナ後のways
-我的經理yi
-理念を理解し
+中長期の人員計画
+採用計画
 真正落實d
 積極的なjob
+適切な長期
