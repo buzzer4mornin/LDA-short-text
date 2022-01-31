@@ -144,12 +144,12 @@ class MyLDA:
         # ---- Update beta ----
 
         # Original 1.0
-        self.beta = np.zeros((self.num_topics, self.num_terms), dtype=float)
-        self.beta[:, ids] += unit_beta
+        # self.beta = np.zeros((self.num_topics, self.num_terms), dtype=float)
+        # self.beta[:, ids] += unit_beta
 
         # New approach
-        #rhot = pow(1 + self.updatect, -0.9)
-        #self.rhot = rhot
-        #self.beta *= (1 - rhot)
-        #self.beta[:, ids] += unit_beta * rhot
-        #self.updatect += 1
+        rhot = pow(1 + self.updatect, -0.9)
+        self.rhot = rhot
+        self.beta *= (1 - rhot)
+        self.beta[:, ids] += unit_beta * rhot
+        self.updatect += 1

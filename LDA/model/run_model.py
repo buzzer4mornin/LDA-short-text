@@ -9,7 +9,7 @@ def main():
     # -------------------------------------------- Set Config ----------------------------------------------------------
     docs_file = "./input-data/docs.txt"
     setting_file = "./input-data/settings.txt"
-    output_folder = "./showcase_50_50/"
+    output_folder = "./output-data/"
     saved_outputs = "./saved-outputs/"
 
     # Create output folder if it doesn't exist
