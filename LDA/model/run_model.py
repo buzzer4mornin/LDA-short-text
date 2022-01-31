@@ -9,7 +9,7 @@ def main():
     # -------------------------------------------- Set Config ----------------------------------------------------------
     docs_file = "./input-data/docs.txt"
     setting_file = "./input-data/settings.txt"
-    output_folder = "./output-data/"
+    output_folder = "./showcase_50_50/"
     saved_outputs = "./saved-outputs/"
 
     # Create output folder if it doesn't exist
@@ -74,13 +74,10 @@ def main():
         algo.run_EM(termids, termcts, i)
 
         # List Tops Difference
-        print("-------")
-        print(f"Iteration: {i}")
         list_tops = utilities.list_top(algo.beta, ddict['tops'])
         utilities.print_diff_list_tops(list_tops, prev_list_tops)
         time.sleep(10)
         prev_list_tops = list_tops
-        print("-------")
 
         # if i == some_iteration : --> save files
 

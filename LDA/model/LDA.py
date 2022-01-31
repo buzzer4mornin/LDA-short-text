@@ -18,6 +18,7 @@ class MyLDA:
         self.num_topics = num_topics
         self.alpha = alpha
         self.iter_infer = iter_infer
+        self.updatect = 1
 
         # Initialize beta (topics)
         self.beta = np.random.rand(self.num_topics, self.num_terms) + 1e-10
@@ -140,6 +141,15 @@ class MyLDA:
         # Normalize the intermediate beta
         unit_beta_norm = unit_beta.sum(axis=1)
         unit_beta /= unit_beta_norm[:, np.newaxis]
-        # Update beta
+        # ---- Update beta ----
+
+        # Original 1.0
         self.beta = np.zeros((self.num_topics, self.num_terms), dtype=float)
         self.beta[:, ids] += unit_beta
+
+        # New approach
+        #rhot = pow(1 + self.updatect, -0.9)
+        #self.rhot = rhot
+        #self.beta *= (1 - rhot)
+        #self.beta[:, ids] += unit_beta * rhot
+        #self.updatect += 1

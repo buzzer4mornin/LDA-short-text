@@ -28,7 +28,7 @@ def get_vocabulary():
     df_raw = pd.read_csv("pulse_q2_2021_raw.csv")
 
     # find and extract comment columns
-    comments = [c for c in df_raw.columns if "COMMENT" in c]
+    comments = [c for c in df_raw.columns if "COMMENT" in c and "TOPICS" not in c]
     df_comments = df_raw[[*comments]]
 
     # filter out null comment columns
@@ -69,9 +69,9 @@ def get_vocabulary():
     terms = re.sub(r"\S*\d\S*", "", terms).strip()  # remove words with numbers
     terms = RegexpTokenizer(r'\w{4,}').tokenize(terms)  # remove words of TODO: length < 3/4
     terms = [w for w in terms if w not in stop_words]  # remove stop-words
-    # terms = [w for w in terms if w not in stop_words and "_" not in w]  # remove words with underscore
-    # disregard = ["work", "working", "workings", "people", "company", "merck", "msd", "employ", "peop"]
-    # terms = [w for w in terms if not any(d in w for d in disregard)]
+    # terms = [t for t in terms if t not in stop_words and "_" not in w]  # remove words with underscore
+    disregard = ["work", "working", "workings", "people", "company", "merck", "msd", "employ", "peop"]
+    terms = [t for t in terms if not any(d in t for d in disregard)]
     terms = set(terms)
 
     # Create Vocabulary textfile
@@ -108,10 +108,10 @@ def get_input_docs(vocab, eng_comments):
         comment = comment.lower()
         comment = re.sub(r"\S*\d\S*", "", comment).strip()  # remove words with numbers
         comment = RegexpTokenizer(r'\w{4,}').tokenize(comment)  # remove words of TODO: length < 3/4
-        comment = [w for w in comment if w not in stop_words]  # remove stop-words
-        # terms = [t for t in terms if t not in stop_words and "_" not in t]  # remove words with underscore
-        # disregard = ["work", "working", "workings", "people", "company", "merck", "msd", "employ", "peop"]
-        # terms = [w for w in terms if not any(d in w for d in disregard)]
+        comment = [c for c in comment if c not in stop_words]  # remove stop-words
+        # comment = [c for c in comment if t not in stop_words and "_" not in t]  # remove words with underscore
+        disregard = ["work", "working", "workings", "people", "company", "merck", "msd", "employ", "peop"]
+        comment = [c for c in comment if not any(d in c for d in disregard)]
 
         term_counts = {}
         for term in comment:

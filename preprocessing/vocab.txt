@@ -100,8 +100,6 @@ accomodate
 accompagny
 accompanied
 accompanies
-accompany
-accompanying
 accomplish
 accomplished
 accomplishing
@@ -203,6 +201,7 @@ adap
 adapt
 adaptability
 adaptable
+adaptarse
 adaptation
 adaptations
 adapted
@@ -517,6 +516,7 @@ alternative
 alternatively
 alternatives
 although
+alto
 altogether
 altruism
 alum
@@ -556,7 +556,6 @@ among
 amongst
 amount
 amounts
-ampla
 ample
 amplification
 amplified
@@ -565,6 +564,7 @@ amplifying
 amply
 amzazing
 anal
+analisis
 analitical
 analitycs
 analogous
@@ -637,7 +637,6 @@ answering
 answers
 antagonise
 antelliq
-antes
 anthony
 anti
 antibacterial
@@ -676,7 +675,6 @@ apartment
 apartments
 apathetic
 apathy
-apertura
 apex
 aphas
 apis
@@ -760,8 +758,6 @@ aprender
 april
 aproaches
 aprofundado
-aproveitadas
-aproveitamento
 apts
 apéro
 aquisiition
@@ -779,6 +775,7 @@ architecture
 archival
 archive
 archiving
+archivos
 arduous
 area
 areas
@@ -812,8 +809,11 @@ arranged
 arrangement
 arrangements
 arranging
+arrastramos
+arretent
 arrive
 arrived
+arrivent
 arriving
 arrogance
 arrogant
@@ -826,7 +826,6 @@ articulation
 artificial
 artificially
 artis
-artwork
 asana
 asap
 ascend
@@ -918,7 +917,6 @@ aternatives
 atlanta
 atlas
 atleast
-atmerck
 atmoshphere
 atmosphere
 atom
@@ -1022,6 +1020,7 @@ availability
 available
 availing
 avalanche
+avec
 avenue
 avenues
 average
@@ -1049,7 +1048,6 @@ awful
 awhile
 awkward
 awkwardness
-ayant
 aybe
 azienda
 azmi
@@ -1263,6 +1261,7 @@ beneath
 benefices
 beneficial
 beneficials
+beneficios
 beneficts
 benefiits
 benefit
@@ -1282,6 +1281,7 @@ berated
 bereavement
 beside
 besides
+besoin
 best
 bestowed
 beta
@@ -1306,6 +1306,7 @@ biasedness
 biases
 biblically
 biden
+bien
 bierocracy
 bigger
 biggest
@@ -1778,7 +1779,7 @@ calmness
 camaraderie
 cambia
 cambian
-cambio
+cambios
 came
 camera
 cameras
@@ -1824,7 +1825,6 @@ capabilities
 capability
 capable
 capably
-capacidade
 capacities
 capacity
 capas
@@ -2019,6 +2019,7 @@ chang
 change
 changed
 changelles
+changent
 changeover
 changer
 changers
@@ -2145,7 +2146,6 @@ claimable
 claimed
 claiming
 claims
-claire
 claras
 clarification
 clarified
@@ -2180,6 +2180,7 @@ click
 clicks
 clicky
 client
+clientes
 clients
 cliff
 climate
@@ -2283,6 +2284,7 @@ coinsurance
 coisas
 coke
 cola
+colaborador
 colaboradores
 colaboration
 colaborations
@@ -2436,8 +2438,6 @@ compaigns
 compaines
 companies
 companion
-company
-companyshould
 comparable
 comparative
 comparatively
@@ -2454,7 +2454,6 @@ compass
 compassion
 compassionate
 compatability
-compatencia
 compatibility
 compatible
 compay
@@ -2683,6 +2682,7 @@ conscious
 consciously
 consciousness
 consecutive
+conseguir
 consensus
 consent
 consequence
@@ -2697,6 +2697,7 @@ consevertive
 consider
 considerable
 considerably
+considerar
 considerarion
 considerate
 consideration
@@ -2713,7 +2714,6 @@ consistencies
 consistency
 consistenly
 consistent
-consistentes
 consistently
 consisting
 consists
@@ -2740,7 +2740,6 @@ constraint
 constraints
 construct
 constructed
-constructif
 construction
 constructive
 constructively
@@ -2766,6 +2765,7 @@ cont
 contact
 contacted
 contacting
+contactos
 contacts
 contagious
 contain
@@ -2834,6 +2834,7 @@ contributors
 contries
 controdicting
 control
+controlant
 controllable
 controlled
 controllig
@@ -2943,6 +2944,7 @@ cost
 costa
 costing
 costly
+costo
 costs
 costumer
 costumize
@@ -3000,8 +3002,6 @@ coveted
 covid
 covis
 cowboys
-coworker
-coworkers
 cozy
 cpws
 cracks
@@ -3127,7 +3127,6 @@ cultivate
 cultivating
 cultrue
 cultulal
-cultura
 cultural
 culturally
 culture
@@ -3359,6 +3358,7 @@ degrading
 degree
 degrees
 deja
+delais
 delay
 delayed
 delayer
@@ -3503,7 +3503,6 @@ description
 descriptions
 desempeño
 desencourage
-desenvolvimento
 desert
 deserve
 deserved
@@ -3550,6 +3549,7 @@ detailed
 detailing
 details
 detect
+detectamos
 deter
 deteriorated
 deteriorating
@@ -3660,6 +3660,7 @@ differents
 differing
 differs
 difficult
+difficulte
 difficulties
 difficulty
 diffrent
@@ -3669,7 +3670,6 @@ diffused
 diffusion
 diffussion
 dificult
-difundir
 digest
 digested
 digging
@@ -3694,6 +3694,7 @@ digitization
 digitize
 dignity
 digs
+dijital
 diligence
 diligent
 diligently
@@ -3865,6 +3866,8 @@ disjointed
 dislike
 dismal
 dismantling
+disminuido
+disminuir
 dismiss
 dismissals
 dismissed
@@ -4042,10 +4045,13 @@ donald
 donating
 donation
 donations
+donc
+donde
 done
 dones
 dong
 dongdan
+donner
 donot
 dont
 doomed
@@ -4146,6 +4152,7 @@ dtrc
 dual
 dubious
 dublin
+duda
 dues
 dulled
 dumb
@@ -4216,6 +4223,7 @@ ebnsure
 ebooks
 ebrg
 ebrgs
+echelle
 echelons
 echo
 echoing
@@ -4226,6 +4234,8 @@ ecommerce
 economic
 economical
 economically
+economico
+economicos
 economics
 economies
 economists
@@ -4394,6 +4404,8 @@ empathetic
 empathic
 empathize
 empathy
+empatizamos
+empatizar
 emphases
 emphasis
 emphasise
@@ -4407,22 +4419,8 @@ emphesis
 empire
 empleados
 emploees
-employ
-employed
-employee
-employees
-employeess
-employer
-employers
-employes
-employess
-employing
-employment
-employs
 emplyed
 emplyees
-empoderamento
-empoderar
 empower
 empowered
 empowering
@@ -4432,10 +4430,10 @@ empowernement
 empowernment
 empowers
 empowring
+empregado
 empresa
 emptiness
 empty
-emsabados
 emulate
 enable
 enabled
@@ -4462,7 +4460,6 @@ encounters
 encourage
 encouraged
 encouragement
-encourager
 encourages
 encouraging
 encumbered
@@ -4495,6 +4492,7 @@ energizing
 energy
 enfique
 enfo
+enfocarnos
 enforce
 enforced
 enforcement
@@ -4610,6 +4608,7 @@ epic
 epidemic
 episode
 epitomize
+epuise
 equal
 equalily
 equality
@@ -4686,19 +4685,21 @@ essence
 essential
 essentially
 essentials
+esta
 establish
 established
 establishing
 establishments
 estamos
 estate
-estender
 estimate
 estimated
 estimates
 estimating
 estimations
+estos
 estress
+estrés
 está
 eternal
 eternally
@@ -4985,7 +4986,6 @@ extensive
 extensively
 extent
 exterior
-externa
 external
 externalities
 externalize
@@ -5038,6 +5038,7 @@ faction
 factions
 factor
 factored
+factores
 factories
 factoring
 factors
@@ -5055,6 +5056,7 @@ failsafes
 failure
 failures
 fair
+faire
 fairer
 fairly
 fairness
@@ -5187,7 +5189,6 @@ field
 fieldforce
 fielding
 fields
-fieldwork
 fiercer
 fight
 fighter
@@ -5333,6 +5334,7 @@ fluff
 fluid
 fluidity
 fluidly
+flujo
 flux
 flying
 flyod
@@ -5433,7 +5435,6 @@ formula
 formulaic
 formulary
 formulating
-fornecer
 fornt
 forsaken
 forth
@@ -5480,8 +5481,6 @@ fraizer
 frame
 framed
 frames
-framework
-frameworks
 framing
 france
 franchise
@@ -5544,7 +5543,6 @@ frist
 frivolous
 frog
 froms
-fromsilostonetworks
 front
 frontline
 frontliner
@@ -5586,7 +5584,6 @@ fullfill
 fulltime
 fully
 fumes
-funcionarios
 funcitonal
 function
 functional
@@ -5618,7 +5615,6 @@ furthest
 furture
 furure
 futile
-futur
 future
 futures
 futuristic
@@ -5944,6 +5940,7 @@ gyms
 habit
 habits
 habitual
+hace
 hacer
 hacerlo
 hack
@@ -6013,8 +6010,6 @@ hardly
 hardship
 hardward
 hardware
-hardwork
-hardworking
 harm
 harmful
 harmonious
@@ -6050,6 +6045,7 @@ haulers
 haunt
 havard
 haves
+havng
 havé
 hazard
 hazardous
@@ -6144,6 +6140,7 @@ heroes
 heroic
 heroics
 heros
+herramientas
 hesitance
 hesitancy
 hesitant
@@ -6245,8 +6242,6 @@ homes
 homeschool
 homeschooling
 hometown
-homework
-homeworking
 homicide
 hommization
 homogeneity
@@ -6320,7 +6315,6 @@ housed
 household
 households
 houses
-housework
 housing
 however
 howver
@@ -6336,6 +6330,7 @@ huddles
 huge
 hugely
 humain
+humains
 human
 humane
 humanilty
@@ -6503,6 +6498,7 @@ implant
 imple
 implememted
 implement
+implementar
 implementation
 implementations
 implemented
@@ -6626,7 +6622,6 @@ inclusión
 income
 incomes
 incoming
-incompany
 incompatible
 incompetence
 incompetency
@@ -6814,6 +6809,7 @@ injuries
 injustice
 injustices
 inline
+inmunoterapia
 innately
 inner
 innitiatives
@@ -6975,7 +6971,6 @@ interactions
 interactive
 interal
 interchangeable
-intercompany
 interdepartmental
 interdependent
 interdivisional
@@ -7007,11 +7002,9 @@ internal
 internalized
 internallly
 internally
-internamente
 international
 internationally
 internet
-internos
 interns
 internships
 interoperability
@@ -7324,7 +7317,6 @@ keyboards
 keynes
 keys
 keytruda
-keyworkers
 kick
 kicked
 kickers
@@ -7366,7 +7358,6 @@ knowledgable
 knowledge
 knowledgeable
 knowlege
-knowmerck
 known
 knows
 kocal
@@ -7554,6 +7545,7 @@ lens
 lense
 lenvima
 leraning
+lesprocess
 less
 lessen
 lessened
@@ -7567,6 +7559,7 @@ letter
 letterhead
 letters
 letting
+leur
 leval
 level
 leveling
@@ -7589,6 +7582,7 @@ liaison
 liaisons
 liars
 liberaban
+liberadas
 liberal
 liberalized
 liberalizing
@@ -7907,6 +7901,7 @@ mandatories
 mandatory
 mandos
 manegement
+manera
 maneuver
 maneuvered
 manger
@@ -7922,9 +7917,11 @@ mankind
 manner
 manners
 manor
+manos
 manpower
 mantain
 mantenido
+manter
 mantra
 manual
 manually
@@ -8074,6 +8071,7 @@ medicine
 medicines
 mediclaim
 medico
+medicos
 medicover
 medidas
 mediocracy
@@ -8086,14 +8084,15 @@ mediums
 medlegal
 meds
 meehan
+meer
 meet
 meeting
 meetingless
 meetings
 meets
 mejor
+mejoramos
 melbourne
-melhor
 melhorias
 mellow
 member
@@ -8129,10 +8128,6 @@ merc
 mercado
 mercenaries
 mercer
-merck
-merckmsd
-mercks
-merckspace
 mercy
 mere
 merely
@@ -8192,6 +8187,7 @@ midnight
 midpoint
 midrand
 midst
+miembros
 mifkovich
 might
 mighty
@@ -8456,14 +8452,6 @@ movies
 moving
 mrna
 mrに語れるdistrict
-msdah
-msdan
-msdc
-msdethics
-msdian
-msdians
-msdorders
-msds
 msft
 msls
 mstat
@@ -8488,6 +8476,7 @@ multinationals
 multiple
 multiples
 multiplication
+multiplie
 multiplier
 multipliers
 multiply
@@ -8517,11 +8506,11 @@ mylearing
 mylearning
 mylearnings
 mylife
-mymerckaccounts
 myopic
 myriad
 mysd
 mystery
+mëmes
 nail
 naive
 naleven
@@ -8575,6 +8564,7 @@ nearly
 neat
 necesarios
 necesary
+necesitamos
 necessarily
 necessary
 necessitated
@@ -8601,7 +8591,6 @@ neglect
 neglected
 neglecting
 negligible
-negocio
 negotations
 negotiable
 negotiate
@@ -8625,10 +8614,6 @@ netflix
 nether
 netherlands
 nets
-network
-networked
-networking
-networks
 neuro
 neurodegenerative
 neurodiverse
@@ -8761,7 +8746,9 @@ nuanced
 nuances
 nuasvasive
 nucleic
-nuevas
+nuestras
+nuestro
+nuestros
 nuevos
 nuggets
 nuisance
@@ -8797,7 +8784,6 @@ obligated
 obligation
 obligations
 obliged
-obra
 obscure
 observable
 observant
@@ -8824,6 +8810,7 @@ obtrusive
 obvioulsy
 obvious
 obviously
+ocasiones
 ocasions
 occasion
 occasional
@@ -8907,8 +8894,6 @@ oncology
 oncolytic
 onedrive
 onehealth
-onemerck
-onemsd
 onenote
 onerous
 ones
@@ -9066,7 +9051,6 @@ oslo
 osrs
 ostracize
 ostracized
-otevwork
 otherness
 others
 otherside
@@ -9110,7 +9094,6 @@ outperformers
 outperforms
 output
 outputs
-outra
 outrank
 outreach
 outright
@@ -9237,9 +9220,6 @@ overwhelmed
 overwhelming
 overwhelmingly
 overwhelms
-overwork
-overworked
-overworking
 owed
 owens
 owned
@@ -9255,6 +9235,7 @@ oxymoron
 oyees
 pace
 paced
+pacientes
 pacients
 pacific
 pack
@@ -9308,7 +9289,6 @@ pants
 paper
 paperless
 papers
-paperwork
 para
 parade
 paradigm
@@ -9477,11 +9457,6 @@ pennywise
 pension
 pensioning
 pensions
-peopel
-peopla
-people
-peoples
-peoplle
 peple
 peppering
 peptides
@@ -9494,6 +9469,7 @@ percentages
 percentile
 perception
 perceptions
+perdemos
 perfect
 perfected
 perfecting
@@ -9726,7 +9702,6 @@ planear
 planed
 planes
 planet
-planification
 planing
 planned
 planner
@@ -9767,7 +9742,6 @@ plenty
 plethora
 plexiglass
 plodding
-plotados
 plough
 plug
 plugged
@@ -9782,9 +9756,12 @@ poace
 pocket
 pockets
 poco
+pocos
 pocs
 podcasts
+poder
 podge
+podrimas
 poeple
 poignant
 point
@@ -9829,6 +9806,7 @@ pollination
 pollution
 polo
 poloitics
+pompier
 pong
 pongs
 pontificating
@@ -9863,7 +9841,6 @@ posed
 poses
 posibilites
 posing
-positif
 position
 positioned
 positioning
@@ -9872,7 +9849,6 @@ positive
 positively
 positives
 positivity
-possam
 possess
 possesses
 possession
@@ -10116,6 +10092,7 @@ privileges
 privy
 prized
 prizes
+proactiva
 proactive
 proactively
 proactiveness
@@ -10157,6 +10134,7 @@ procesure
 procing
 procrastinates
 procrastination
+procurar
 procure
 procured
 procurement
@@ -10283,6 +10261,7 @@ proplr
 proponent
 proponha
 proporcionado
+proporcionando
 proportion
 proportional
 proportionally
@@ -10481,6 +10460,7 @@ quicker
 quickley
 quickly
 quien
+quienes
 quiet
 quieted
 quieter
@@ -10577,6 +10557,7 @@ reacting
 reaction
 reactionary
 reactions
+reactiva
 reactive
 reactively
 reactivity
@@ -10593,6 +10574,7 @@ ready
 reagents
 reain
 real
+realidad
 realign
 realigning
 realignment
@@ -10603,6 +10585,7 @@ realistic
 realistically
 realities
 reality
+realizacion
 realizar
 realization
 realize
@@ -10736,11 +10719,14 @@ recruiting
 recruitment
 recruitments
 recruits
+recruter
 rectified
 rectify
 rectifying
+recuersos
 recuperation
 recurring
+recurso
 recursos
 recycle
 recycled
@@ -10853,7 +10839,6 @@ regulatory
 rehashing
 rehire
 reign
-reigns
 reimagine
 reimaging
 reimagining
@@ -11208,7 +11193,6 @@ restarting
 restaurant
 restaurants
 rested
-rester
 resting
 restoration
 restore
@@ -11331,8 +11315,6 @@ rewarded
 rewarding
 rewards
 rewiew
-rework
-reworking
 rewrite
 rfms
 rhetoric
@@ -11389,8 +11371,6 @@ rival
 riverside
 rmads
 rmds
-rmsd
-rmsds
 road
 roadblock
 roadblocks
@@ -11533,10 +11513,10 @@ salary
 sale
 saleceforce
 saleforce
+salen
 salenvac
 sales
 salesforce
-salespeople
 sallaries
 salon
 salt
@@ -11758,6 +11738,7 @@ semester
 semi
 seminars
 semplification
+sempre
 senate
 senators
 sence
@@ -11834,7 +11815,6 @@ settled
 settles
 setup
 setups
-seus
 seven
 several
 severance
@@ -11879,6 +11859,7 @@ sharp
 sharpen
 sharper
 shattered
+shave
 shear
 shed
 sheds
@@ -11894,7 +11875,6 @@ shift
 shifted
 shifting
 shifts
-shiftwork
 shine
 shines
 shining
@@ -12058,6 +12038,7 @@ singular
 singularly
 sink
 sinks
+sino
 sips
 sisters
 sita
@@ -12163,7 +12144,6 @@ smartglasses
 smartly
 smartphone
 smartqc
-smartworking
 smashed
 smes
 smidge
@@ -12172,6 +12152,7 @@ smis
 smooth
 smoother
 smoothly
+smoyens
 smses
 smsll
 snack
@@ -12188,6 +12169,7 @@ snowflake
 snowflakes
 snubbed
 soaring
+sobre
 social
 socialism
 socialization
@@ -12269,6 +12251,7 @@ source
 sourced
 sources
 sourcing
+soutenir
 south
 southeast
 southern
@@ -12716,7 +12699,6 @@ stupid
 sturctured
 style
 styles
-subcompany
 subcontinent
 subdivision
 subdivisions
@@ -12779,6 +12761,7 @@ successors
 succinct
 succsessfull
 succumbing
+sucediendo
 sucess
 suchl
 suck
@@ -12848,6 +12831,7 @@ supervisory
 suport
 suported
 supplement
+supplementaires
 supplemental
 supplementing
 supplements
@@ -12877,7 +12861,6 @@ suppressing
 suppression
 supproting
 supprting
-supreme
 supremest
 supremist
 sure
@@ -13024,7 +13007,6 @@ talants
 tale
 talent
 talented
-talentos
 talents
 talk
 talked
@@ -13044,6 +13026,7 @@ tape
 tapes
 tapped
 taps
+tarbajamos
 tardados
 target
 targeted
@@ -13084,7 +13067,6 @@ teammembers
 teams
 teamspace
 teamspaces
-teamwork
 tear
 tearing
 tears
@@ -13120,11 +13102,10 @@ teleconferences
 telehealth
 telephone
 telephonic
-telework
-teleworking
 tell
 telling
 tells
+tema
 temperature
 tempered
 tempers
@@ -13145,6 +13126,7 @@ tendency
 tender
 tenders
 tends
+tenemos
 tennis
 tens
 tense
@@ -13285,6 +13267,7 @@ tidval
 tidy
 tied
 tiempo
+tiempos
 tiene
 tier
 tiered
@@ -13350,6 +13333,7 @@ todate
 today
 todays
 todd
+todo
 todos
 toeing
 together
@@ -13417,9 +13401,12 @@ touchy
 tough
 toughen
 tougher
+toujours
 tour
 tournament
+tournés
 tours
+tous
 tout
 touted
 toutes
@@ -13534,6 +13521,7 @@ trap
 trapeutiche
 trapped
 traps
+tras
 trash
 trasnformation
 trasnformative
@@ -13542,6 +13530,7 @@ trat
 trauma
 traumatic
 travail
+travailler
 travel
 traveling
 travelling
@@ -13600,6 +13589,7 @@ trips
 trivial
 trivializing
 troops
+trop
 trophies
 trophy
 trouble
@@ -13817,8 +13807,6 @@ uneasy
 unecessary
 uneducated
 uneeded
-unemployed
-unemployment
 unequal
 unequitable
 unequivocally
@@ -13850,7 +13838,6 @@ unhappy
 unhealthy
 unheard
 unhelpful
-unidades
 unified
 uniform
 uniformed
@@ -14043,6 +14030,7 @@ uspt
 usual
 usually
 ususally
+utilisateurs
 utilise
 utilised
 utilities
@@ -14076,14 +14064,12 @@ vain
 vaki
 valiant
 valid
-validar
 validate
 validated
 validation
 validations
 validity
 valleys
-valorizar
 valuable
 valuate
 valuation
@@ -14106,6 +14092,7 @@ variance
 variances
 variant
 variants
+varias
 variate
 variation
 variations
@@ -14114,6 +14101,7 @@ varied
 varients
 varies
 variety
+varios
 various
 vary
 varying
@@ -14133,6 +14121,7 @@ vending
 vendor
 vendores
 vendors
+venta
 ventilated
 venture
 ventured
@@ -14178,7 +14167,6 @@ vetoed
 vets
 vetted
 vetting
-vffm
 viability
 viable
 vial
@@ -14236,7 +14224,6 @@ virus
 viruses
 visa
 visable
-visando
 visas
 visibility
 visible
@@ -14256,7 +14243,6 @@ visualizations
 visualize
 visualizing
 visuals
-visão
 vital
 vitality
 vitamin
@@ -14427,8 +14413,6 @@ went
 west
 western
 wether
-wework
-weworks
 whack
 whatever
 whats
@@ -14541,56 +14525,6 @@ wordpress
 words
 wordy
 wore
-work
-workable
-workaholic
-workaround
-workarounds
-workday
-workdays
-worke
-worked
-workeforce
-worker
-workers
-workfloor
-workflow
-workflows
-workforce
-workgroup
-workgroups
-workhours
-working
-workings
-workingの継続
-worklife
-workload
-workloadh
-workloads
-workorders
-workout
-workoverload
-workpeople
-workplace
-workplaces
-workpower
-workpressure
-workroom
-works
-workscape
-workshop
-workshops
-worksite
-worksites
-workspace
-workspaces
-workstation
-workstations
-workstream
-workstreams
-worktime
-workweek
-workweeks
 worl
 world
 worldly
@@ -14676,9 +14610,8 @@ zuprevo
 zurich
 évolutions
 ótima
+ในการทำ
 コロナ後のways
-可以更加重视work
-希望msd
 理念を理解し
 真正落實d
 積極的なjob

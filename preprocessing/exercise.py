@@ -4,7 +4,7 @@ from langdetect import detect
 # read raw data
 df = pd.read_csv("pulse_q2_2021_raw.csv")
 
-comments = [c for c in df.columns if "COMMENT" in c]
+comments = [c for c in df.columns if "COMMENT" in c and "TOPICS" not in c]
 
 # extract comment columns only
 df = df[[*comments]]
