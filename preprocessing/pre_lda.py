@@ -30,7 +30,7 @@ def get_vocabulary():
     df_raw = pd.read_csv("pulse_q2_2021_raw.csv")
 
     # find and extract comment columns
-    comments = [c for c in df_raw.columns if "COMMENT" in c and "TOPICS" not in c]
+    comments = [c for c in df_raw.columns if "COMMENT" in c] # and "TOPICS" not in c]
     df_comments = df_raw[[*comments]]
 
     # filter out null comment columns
@@ -84,7 +84,7 @@ def get_vocabulary():
 
     end = time.time()
     print('-*-*-* Successfully Created "vocab.txt" *-*-*-')
-    print("Total number of english comments:", len(terms))
+    print("Total number of english comments:", len(eng_comments))
     print("Vocabulary size:", len(vocab))
     print('Execution time: {:.2f} min'.format((end - start) / 60))
     return vocab, eng_comments
@@ -162,4 +162,4 @@ def get_input_docs(vocab, eng_comments, test_size, test_set_split_proportion):
 
 if __name__ == '__main__':
     vocab, eng_comments = get_vocabulary()
-    get_input_docs(vocab, eng_comments, test_size=2000, test_set_split_proportion=0.75)
+    get_input_docs(vocab, eng_comments, test_size=2000, test_set_split_proportion=0.5)
