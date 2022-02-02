@@ -148,7 +148,7 @@ class MyLDA:
         # self.beta[:, ids] += unit_beta
 
         # New approach
-        rhot = pow(1 + self.updatect, -0.9)
+        rhot = pow(1 + self.updatect, -0.75)
         self.beta *= (1 - rhot)
         self.beta[:, ids] += unit_beta * rhot
         self.updatect += 1

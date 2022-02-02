@@ -162,4 +162,4 @@ def get_input_docs(vocab, eng_comments, test_size, test_set_split_proportion):
 
 if __name__ == '__main__':
     vocab, eng_comments = get_vocabulary()
-    get_input_docs(vocab, eng_comments, test_size=2000, test_set_split_proportion=0.5)
+    get_input_docs(vocab, eng_comments, test_size=4000, test_set_split_proportion=0.5)

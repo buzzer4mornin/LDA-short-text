@@ -1,7 +1,7 @@
-num_docs: 36523
-num_terms: 14575
+num_docs: 34571
+num_terms: 14546
 num_topics: 15
 tops: 20
-alpha: 0.3
-iter_infer: 25
-iter_train: 100
+alpha: 0.0666
+iter_infer: 100
+iter_train: 20

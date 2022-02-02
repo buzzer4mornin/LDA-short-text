@@ -201,6 +201,7 @@ adap
 adapt
 adaptability
 adaptable
+adaptarse
 adaptation
 adaptations
 adapted
@@ -554,7 +555,6 @@ among
 amongst
 amount
 amounts
-ampla
 ample
 amplification
 amplified
@@ -635,7 +635,6 @@ answering
 answers
 antagonise
 antelliq
-antes
 anthony
 anti
 antibacterial
@@ -758,8 +757,6 @@ aprender
 april
 aproaches
 aprofundado
-aproveitadas
-aproveitamento
 apts
 apéro
 aquisiition
@@ -810,6 +807,7 @@ arranged
 arrangement
 arrangements
 arranging
+arrastramos
 arrive
 arrived
 arriving
@@ -1045,7 +1043,6 @@ awful
 awhile
 awkward
 awkwardness
-ayant
 aybe
 azienda
 azmi
@@ -1650,7 +1647,6 @@ buildings
 builds
 builiding
 built
-buisiness
 buisness
 bulding
 bulilding
@@ -1687,6 +1683,7 @@ bureaucratize
 bureaucratizing
 bureaucry
 bureauracy
+burecratic
 bureocracy
 bureucratic
 buried
@@ -1775,6 +1772,7 @@ camaraderie
 cambia
 cambian
 cambio
+cambios
 came
 camera
 cameras
@@ -1820,7 +1818,6 @@ capabilities
 capability
 capable
 capably
-capacidade
 capacities
 capacity
 capas
@@ -2141,7 +2138,6 @@ claimable
 claimed
 claiming
 claims
-claire
 claras
 clarification
 clarified
@@ -2448,7 +2444,6 @@ compass
 compassion
 compassionate
 compatability
-compatencia
 compatibility
 compatible
 compay
@@ -2691,6 +2686,7 @@ consevertive
 consider
 considerable
 considerably
+considerar
 considerarion
 considerate
 consideration
@@ -2707,7 +2703,6 @@ consistencies
 consistency
 consistenly
 consistent
-consistentes
 consistently
 consisting
 consists
@@ -2734,7 +2729,6 @@ constraint
 constraints
 construct
 constructed
-constructif
 construction
 constructive
 constructively
@@ -3119,7 +3113,6 @@ cultivate
 cultivating
 cultrue
 cultulal
-cultura
 cultural
 culturally
 culture
@@ -3495,7 +3488,6 @@ description
 descriptions
 desempeño
 desencourage
-desenvolvimento
 desert
 deserve
 deserved
@@ -3611,7 +3603,6 @@ diagnostic
 diagnostics
 dial
 dialog
-dialogo
 dialogue
 dialogues
 diaries
@@ -3662,7 +3653,6 @@ diffused
 diffusion
 diffussion
 dificult
-difundir
 digest
 digested
 digging
@@ -3687,7 +3677,6 @@ digitization
 digitize
 dignity
 digs
-dijital
 diligence
 diligent
 diligently
@@ -3860,6 +3849,7 @@ disjointed
 dislike
 dismal
 dismantling
+disminuir
 dismiss
 dismissals
 dismissed
@@ -4223,7 +4213,6 @@ economical
 economically
 economics
 economies
-economis
 economists
 economy
 ecosystem
@@ -4405,8 +4394,6 @@ empleados
 emploees
 emplyed
 emplyees
-empoderamento
-empoderar
 empower
 empowered
 empowering
@@ -4420,7 +4407,6 @@ empregado
 empresa
 emptiness
 empty
-emsabados
 emulate
 enable
 enabled
@@ -4677,13 +4663,13 @@ establishing
 establishments
 estamos
 estate
-estender
 estimate
 estimated
 estimates
 estimating
 estimations
 estress
+estrés
 está
 eternal
 eternally
@@ -4801,6 +4787,7 @@ excessive
 excessively
 exchange
 exchanges
+exchangeやldg
 excited
 excitement
 excites
@@ -4970,7 +4957,6 @@ extensive
 extensively
 extent
 exterior
-externa
 external
 externalities
 externalize
@@ -5417,7 +5403,6 @@ formula
 formulaic
 formulary
 formulating
-fornecer
 fornt
 forsaken
 forth
@@ -5567,7 +5552,6 @@ fullfill
 fulltime
 fully
 fumes
-funcionarios
 funcitonal
 function
 functional
@@ -5599,7 +5583,6 @@ furthest
 furture
 furure
 futile
-futur
 future
 futures
 futuristic
@@ -6124,6 +6107,7 @@ heroes
 heroic
 heroics
 heros
+herramientas
 hesitance
 hesitancy
 hesitant
@@ -6748,6 +6732,7 @@ inform
 informal
 information
 informations
+informationがどのようにhealthcare
 informative
 informed
 informing
@@ -6983,11 +6968,9 @@ internal
 internalized
 internallly
 internally
-internamente
 international
 internationally
 internet
-internos
 interns
 internships
 interoperability
@@ -7866,7 +7849,6 @@ managementだけでなく
 managemnet
 manager
 managerial
-managerment
 managers
 managerの育成に注力する
 manages
@@ -7882,6 +7864,7 @@ mandatories
 mandatory
 mandos
 manegement
+manera
 maneuver
 maneuvered
 manger
@@ -8062,7 +8045,6 @@ mediums
 medlegal
 meds
 meehan
-meer
 meet
 meeting
 meetingless
@@ -8070,7 +8052,6 @@ meetings
 meets
 mejor
 melbourne
-melhor
 melhorias
 mellow
 member
@@ -8554,6 +8535,8 @@ needings
 needle
 needless
 needs
+needsにmeetし
+needsを深く理解し
 needy
 negate
 negating
@@ -8565,7 +8548,6 @@ neglect
 neglected
 neglecting
 negligible
-negocio
 negotations
 negotiable
 negotiate
@@ -8704,7 +8686,6 @@ notified
 notifying
 notion
 notorious
-noturno
 nourish
 nourished
 novartis
@@ -8722,6 +8703,7 @@ nuanced
 nuances
 nuasvasive
 nucleic
+nuestro
 nuevas
 nuevos
 nuggets
@@ -8758,7 +8740,6 @@ obligated
 obligation
 obligations
 obliged
-obra
 obscure
 observable
 observant
@@ -9040,6 +9021,7 @@ outbursts
 outcast
 outcome
 outcomes
+outcome向上に役立つのか
 outdated
 outdoor
 outer
@@ -9068,7 +9050,6 @@ outperformers
 outperforms
 output
 outputs
-outra
 outrank
 outreach
 outright
@@ -9675,7 +9656,6 @@ planear
 planed
 planes
 planet
-planification
 planing
 planned
 planner
@@ -9717,7 +9697,6 @@ plenty
 plethora
 plexiglass
 plodding
-plotados
 plough
 plug
 plugged
@@ -9813,7 +9792,6 @@ posed
 poses
 posibilites
 posing
-positif
 position
 positioned
 positioning
@@ -9822,7 +9800,6 @@ positive
 positively
 positives
 positivity
-possam
 possess
 possesses
 possession
@@ -10066,6 +10043,7 @@ privileges
 privy
 prized
 prizes
+proactiva
 proactive
 proactively
 proactiveness
@@ -10235,6 +10213,7 @@ proplr
 proponent
 proponha
 proporcionado
+proporcionando
 proportion
 proportional
 proportionally
@@ -10529,6 +10508,7 @@ reacting
 reaction
 reactionary
 reactions
+reactiva
 reactive
 reactively
 reactivity
@@ -10805,7 +10785,6 @@ regulatory
 rehashing
 rehire
 reign
-reigns
 reimagine
 reimaging
 reimagining
@@ -11160,7 +11139,6 @@ restarting
 restaurant
 restaurants
 rested
-rester
 resting
 restoration
 restore
@@ -11782,7 +11760,6 @@ settled
 settles
 setup
 setups
-seus
 seven
 several
 severance
@@ -12725,6 +12702,7 @@ successors
 succinct
 succsessfull
 succumbing
+sucediendo
 sucess
 suchl
 suck
@@ -12823,7 +12801,6 @@ suppressing
 suppression
 supproting
 supprting
-supreme
 supremest
 supremist
 sure
@@ -12970,7 +12947,6 @@ talants
 tale
 talent
 talented
-talentos
 talents
 talk
 talked
@@ -13791,7 +13767,6 @@ unhappy
 unhealthy
 unheard
 unhelpful
-unidades
 unified
 uniform
 uniformed
@@ -14017,14 +13992,12 @@ vain
 vaki
 valiant
 valid
-validar
 validate
 validated
 validation
 validations
 validity
 valleys
-valorizar
 valuable
 valuate
 valuation
@@ -14119,7 +14092,6 @@ vetoed
 vets
 vetted
 vetting
-vffm
 viability
 viable
 vial
@@ -14177,7 +14149,6 @@ virus
 viruses
 visa
 visable
-visando
 visas
 visibility
 visible
@@ -14197,7 +14168,6 @@ visualizations
 visualize
 visualizing
 visuals
-visão
 vital
 vitality
 vitamin
@@ -14566,6 +14536,7 @@ zurich
 évolutions
 ótima
 ในการทำ
+どのように社会に貢献するかをより意識し明確にしたほうがよいように思いました
 コロナ後のways
 中長期の人員計画
 採用計画
