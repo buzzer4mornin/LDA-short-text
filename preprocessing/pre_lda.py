@@ -122,14 +122,17 @@ def get_input_docs(test_size, test_obs_to_ho_ratio):
     test_indices = np.array(random.sample(range(len(eng_comments)), test_size))
 
     for i, comment in enumerate(eng_comments):
-        # --- comment cleaner ---
+        # to save as raw comment (check end of loop)
+        comment_copy = comment
+
+        # comment cleaner
         comment = cleaner(comment)
 
-        # --- pass the comment if it vanished after cleaning :D ---
+        # pass the comment if it vanished after cleaning :)
         if len(comment) == 0:
             continue
 
-        # --- these comments will be in test data ---
+        # --- these comments will be in test data
         if i in test_indices:
             comment_obs, comment_ho = [], []
             ho_indices = np.array(random.sample(range(len(comment)), int((len(comment) * test_obs_to_ho_ratio))))
@@ -143,14 +146,18 @@ def get_input_docs(test_size, test_obs_to_ho_ratio):
             if len(comment_ho) == 0:
                 write_comment("docs.txt", comment)
             else:
-                write_comment("docs_test_part_1.txt", comment_ho)
                 write_comment("docs_test_part_2.txt", comment_obs)
+                write_comment("docs_test_part_1.txt", comment_ho)
                 len_ho += len(comment_ho)
                 len_obs += len(comment_obs)
 
-        # --- these comments will be in training data ---
+        # --- these comments will be in training data
         else:
             write_comment("docs.txt", comment)
+            # save raw comment for later analysis
+            with open("eng_comments", 'a', encoding='utf-8') as f:
+                f.write(comment_copy + "\n")
+
 
     end = time.time()
     print('\n-*-*-* Successfully Created docs *-*-*-')
@@ -160,4 +167,4 @@ def get_input_docs(test_size, test_obs_to_ho_ratio):
 
 if __name__ == '__main__':
     vocab, eng_comments = get_vocabulary()
-    get_input_docs(test_size=5, test_obs_to_ho_ratio=0.2)
+    get_input_docs(test_size=0, test_obs_to_ho_ratio=0.2)

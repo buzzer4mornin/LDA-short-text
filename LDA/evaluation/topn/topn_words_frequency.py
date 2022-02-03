@@ -17,6 +17,6 @@ def list_top(beta, tops):
     return list_tops
 
 if __name__ == '__main__':
-    beta = np.load("../../output-data/beta.npy")
+    beta = np.load("../../saved-outputs/beta.npy")
     result_file = "./topn_output_frequency.txt"
     list_top(beta, 20)
