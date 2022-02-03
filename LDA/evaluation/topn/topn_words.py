@@ -26,5 +26,5 @@ if __name__ == '__main__':
 
     list_tops = "./list_tops.txt"
     vocab_file = "../../../preprocessing/vocab.txt"
-    result_file = "./topn_output.txt"
+    result_file = "topn_output.txt"
     print_topics(vocab_file, list_tops, result_file)

@@ -28,9 +28,10 @@ def get_vocabulary():
 
     # read raw data
     df_raw = pd.read_csv("pulse_q2_2021_raw.csv")
+    # df_raw = df_raw.iloc[350:450, :] ! for test purposes - subselecting rows
 
     # find and extract comment columns
-    comments = [c for c in df_raw.columns if "COMMENT" in c] # and "TOPICS" not in c]
+    comments = [c for c in df_raw.columns if "COMMENT" in c and "TOPICS" not in c]
     df_comments = df_raw[[*comments]]
 
     # filter out null comment columns
@@ -51,10 +52,6 @@ def get_vocabulary():
             else:
                 mask.append(True)
         list_col = list(list_col[mask])
-        # TODO: ~~~ SEPARATOR ~~~
-        # if len(list_c) > 0:
-        #    list_c.append(f"COLUMN ENDS RIGHT HERE: {c}")
-        # ------------------------------------------------
         all_comments += [*list_col]
 
     # extract english comments
@@ -66,17 +63,12 @@ def get_vocabulary():
         except:
             continue
 
-    stop_words = set(stopwords.words('english'))
-    terms = ' '.join(eng_comments).lower()
-    terms = re.sub(r"\S*\d\S*", "", terms).strip()  # remove words with numbers
-    terms = RegexpTokenizer(r'\w{4,}').tokenize(terms)  # remove words of TODO: length < 3/4
-    terms = [w for w in terms if w not in stop_words]  # remove stop-words
-    # terms = [t for t in terms if t not in stop_words and "_" not in w]  # remove words with underscore
-    disregard = ["work", "working", "workings", "people", "company", "merck", "msd", "employ", "peop"]
-    terms = [t for t in terms if not any(d in t for d in disregard)]
+    # merge corpus and clean it
+    terms = ' '.join(eng_comments)
+    terms = cleaner(terms)
     terms = set(terms)
 
-    # Create Vocabulary textfile
+    # extract Vocabulary
     vocab = sorted(set(list(terms)))
     with open("vocab.txt", 'w', encoding='utf-8') as f:
         for term in vocab:
@@ -90,24 +82,19 @@ def get_vocabulary():
     return vocab, eng_comments
 
 
-def write_comment(docs_dir, eng_comment_dir,  comment, vocab):
-    term_vs_index = {v_term: v_index for v_term, v_index in zip(vocab, range(len(vocab)))}
+def cleaner(obj):
     stop_words = set(stopwords.words('english'))
-    comment_readable = comment
-
-    # TODO: ~~~ SEPARATOR ~~~
-    # flag = False
-    # if "COLUMN ENDS RIGHT HERE" in plt:
-    #    flag = True
-    # -----------------------------------
-    comment = comment.lower()
-    comment = re.sub(r"\S*\d\S*", "", comment).strip()  # remove words with numbers
-    comment = RegexpTokenizer(r'\w{4,}').tokenize(comment)  # remove words of TODO: length < 3/4
-    comment = [c for c in comment if c not in stop_words]  # remove stop-words
-    # comment = [c for c in comment if t not in stop_words and "_" not in t]  # remove words with underscore
+    obj = obj.lower()
+    obj = re.sub(r"\S*\d\S*", "", obj).strip()  # remove words with numbers
+    obj = RegexpTokenizer(r'\w{4,}').tokenize(obj)  # remove words of TODO: length < 4
+    obj = [o for o in obj if o not in stop_words]  # remove stop-words
     disregard = ["work", "working", "workings", "people", "company", "merck", "msd", "employ", "peop"]
-    comment = [c for c in comment if not any(d in c for d in disregard)]
+    obj = [o for o in obj if not any(d in o for d in disregard)]
+    return obj
 
+
+def write_comment(docs_dir, comment):
+    term_vs_index = {v_term: v_index for v_term, v_index in zip(vocab, range(len(vocab)))}
     term_counts = {}
     for term in comment:
         try:
@@ -121,18 +108,9 @@ def write_comment(docs_dir, eng_comment_dir,  comment, vocab):
 
     with open(docs_dir, 'a', encoding='utf-8') as f:
         f.write(str(unique_terms) + " " + term_counts + "\n")
-        # TODO: ~~~ SEPARATOR ~~~
-        # if flag:
-        #    print("yes")
-        #    f.write(f"{plt} \n")
-        # else:
-        #    f.write(str(unique_terms) + " " + term_counts + "\n")
-        # --------------------------------------------------------
-    with open(eng_comment_dir, 'a', encoding='utf-8') as f:
-        f.write(comment_readable + "\n")
 
 
-def get_input_docs(vocab, eng_comments, test_size, test_set_split_proportion):
+def get_input_docs(test_size, test_obs_to_ho_ratio):
     """
     Create input text file for LDA
     """
@@ -140,26 +118,46 @@ def get_input_docs(vocab, eng_comments, test_size, test_set_split_proportion):
         os.remove("docs.txt")
     start = time.time()
 
+    len_obs, len_ho = 0, 0
     test_indices = np.array(random.sample(range(len(eng_comments)), test_size))
-    part_1_indices = np.array(random.sample(range(len(test_indices)), int(len(test_indices) * test_set_split_proportion)))
-    test_indices_part_1 = test_indices[part_1_indices]
-    test_indices_part_2 = np.setdiff1d(test_indices, test_indices_part_1)
-
-    print(test_indices_part_1.shape, test_indices_part_2.shape)
 
     for i, comment in enumerate(eng_comments):
-        if i in test_indices_part_1:
-            write_comment("docs_test_part_1.txt", "eng_comments_test_part_1.txt", comment, vocab)
-        elif i in test_indices_part_2:
-            write_comment("docs_test_part_2.txt", "eng_comments_test_part_2.txt", comment, vocab)
+        # --- comment cleaner ---
+        comment = cleaner(comment)
+
+        # --- pass the comment if it vanished after cleaning :D ---
+        if len(comment) == 0:
+            continue
+
+        # --- these comments will be in test data ---
+        if i in test_indices:
+            comment_obs, comment_ho = [], []
+            ho_indices = np.array(random.sample(range(len(comment)), int((len(comment) * test_obs_to_ho_ratio))))
+            for c_index, c in enumerate(comment):
+                if c_index in ho_indices:
+                    comment_ho.append(c)
+                else:
+                    comment_obs.append(c)
+
+            # if comment_ho gets 0 share out of comment, then push it into training data
+            if len(comment_ho) == 0:
+                write_comment("docs.txt", comment)
+            else:
+                write_comment("docs_test_part_1.txt", comment_ho)
+                write_comment("docs_test_part_2.txt", comment_obs)
+                len_ho += len(comment_ho)
+                len_obs += len(comment_obs)
+
+        # --- these comments will be in training data ---
         else:
-            write_comment("docs.txt", "eng_comments.txt", comment, vocab)
+            write_comment("docs.txt", comment)
 
     end = time.time()
-    print('\n-*-*-* Successfully Created "docs.txt" *-*-*-')
+    print('\n-*-*-* Successfully Created docs *-*-*-')
+    print("Resulting obs to who ratio:", round(len_ho / len_obs, 2))
     print("Execution time: {:.2f} min".format((end - start) / 60))
 
 
 if __name__ == '__main__':
     vocab, eng_comments = get_vocabulary()
-    get_input_docs(vocab, eng_comments, test_size=4000, test_set_split_proportion=0.5)
+    get_input_docs(test_size=5, test_obs_to_ho_ratio=0.2)

@@ -76,10 +76,10 @@ def main():
         algo.run_EM(termids, termcts, i)
 
         # List Tops Difference
-        list_tops = utilities.list_top(algo.beta, ddict['tops'])
-        utilities.print_diff_list_tops(list_tops, prev_list_tops)
-        time.sleep(10)
-        prev_list_tops = list_tops
+        # list_tops = utilities.list_top(algo.beta, ddict['tops'])
+        # utilities.print_diff_list_tops(list_tops, prev_list_tops)
+        # time.sleep(10)
+        # prev_list_tops = list_tops
 
         LD2 = utilities.compute_perplexities_vb(algo.beta, ddict['alpha'], 0.01, ddict['iter_infer'], wordids_1, wordcts_1, wordids_2, wordcts_2)
         print(LD2)

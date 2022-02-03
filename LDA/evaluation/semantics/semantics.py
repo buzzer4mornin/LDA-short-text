@@ -8,7 +8,7 @@ theta = np.load("./../../output-data/theta.npy")
 
 with open("./../../input-data/eng_comments.txt", 'r', encoding='utf-8') as f:
     eng_comments = f.readlines()
-with open("./../../output-data/topn_output.txt", 'r', encoding='utf-8') as f:
+with open("./../../output-data/topn_output_SAVED.txt", 'r', encoding='utf-8') as f:
     auto_topics = f.readlines()
 
 manual_topics = ["management", "politics/products", "customers/sales", "org. process/barrier", "org. infrastructure",
