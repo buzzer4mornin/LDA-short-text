@@ -1,7 +1,10 @@
-num_docs: 38814
-num_terms: 14684
+num_docs: 21048
+num_terms: 14582
 num_topics: 15
-tops: 20
-alpha: 0.066
-iter_infer: 20
-iter_train: 20
+batch_size: 21048
+alpha: 0.0666
+eta: 0.01
+tau0: 1
+kappa: 0.9
+iter_infer: 50
+iter_train: 50
