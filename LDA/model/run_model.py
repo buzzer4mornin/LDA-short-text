@@ -22,41 +22,40 @@ def main():
     # Read & write settings into model folder
     print('reading setting ...')
     ddict = utilities.read_setting(setting_file)
-    saved_outputs_folder = f"{saved_outputs}/{ddict['num_topics']}_{ddict['alpha']}_{ddict['iter_infer']}_{ddict['iter_train']}/"
-    try:
-        os.makedirs(saved_outputs_folder)
-    except:
-        pass
 
     print('write setting ...')
+    saved_outputs_folder = f"{saved_outputs}/{ddict['num_topics']}_{ddict['alpha']}_{ddict['iter_infer']}_{ddict['iter_train']}/"
+    if not os.path.exists(saved_outputs_folder):
+        os.makedirs(saved_outputs_folder)
     file_name = f'{output_folder}/settings.txt'
     file_name_saved = f'{saved_outputs_folder}/settings.txt'
     utilities.write_setting(ddict, file_name)
     utilities.write_setting(ddict, file_name_saved)
 
     """
-    termids: A list whose each element is an array (terms ids), corresponding to a document.
-             Each element of the array is index of a unique term in the vocabulary.
+    wordids: A list whose each element is an array (word ids), corresponding to a document.
+             Each element of the array is index of a unique word in the vocabulary.
 
-    termcts: A list whose each element is an array (term counts), corresponding to a document.
-             Each element of the array says how many time the corresponding term in termids appears
+    wordcts: A list whose each element is an array (word counts), corresponding to a document.
+             Each element of the array says how many time the corresponding word in wordids appears
              in the document.
 
     E.g,
     First document = "Movie is about happy traveler"
 
-    termids[0] = array([127, 55, 284, 36, 47], dtype=int32)
-    first document contains terms whose indexes are 127th, 55th, 284th, 36th and 47th in vocabulary
+    wordids[0] = array([127, 55, 284, 36, 47], dtype=int32)
+    first document contains words whose indexes are 127th, 55th, 284th, 36th and 47th in vocabulary
 
-    termcts[0] = array([1, 1, 1, 1, 1], dtype=int32)
-    in first document, terms whose indexes are 127, 55, 284, 36, 47 appears 1, 1, 1, 1, 1 times respectively.
+    wordcts[0] = array([1, 1, 1, 1, 1], dtype=int32)
+    in first document, words whose indexes are 127, 55, 284, 36, 47 appears 1, 1, 1, 1, 1 times respectively.
      """
-    termids, termcts = utilities.read_data(docs_file)
+
+    # Read test data
     wordids_1, wordcts_1, wordids_2, wordcts_2 = utilities.read_data_for_perpl(input_folder)
 
     # -------------------------------------- Initialize Algorithm --------------------------------------------------
     print('initializing LDA algorithm ...\n')
-    algo = MyLDA(ddict['num_docs'], ddict['num_terms'], ddict['num_topics'], ddict['alpha'], ddict['iter_infer'])
+    algo = MyLDA(ddict['num_words'], ddict['num_topics'], ddict['alpha'], ddict['tau0'], ddict['kappa'], ddict['BOPE'], ddict['iter_infer'])
 
     # ----------------------------------------- Run Algorithm ------------------------------------------------------
     # import numpy as np
@@ -68,23 +67,43 @@ def main():
     prev_list_tops = utilities.list_top(algo.beta, ddict['tops'])
 
     print('START!')
+
     for i in range(1, ddict['iter_train'] + 1):
         print(f'\n*** iteration: {i} ***\n')
-        time.sleep(2)
 
-        # Run single EM step and return attributes
-        algo.run_EM(termids, termcts, i)
+        j = 0
+        train_data = open(docs_file, 'r')
+        while True:
+            j += 1
+            # Read mini-batch training Data
+            wordids, wordcts = utilities.read_minibatch_list_frequencies(train_data, ddict['batch_size'])
 
-        # List Tops Difference
-        # list_tops = utilities.list_top(algo.beta, ddict['tops'])
-        # utilities.print_diff_list_tops(list_tops, prev_list_tops)
-        # time.sleep(10)
-        # prev_list_tops = list_tops
+            # Stop condition
+            if len(wordids) == 0:
+                break
 
-        LD2 = utilities.compute_perplexities_vb(algo.beta, ddict['alpha'], 0.01, ddict['iter_infer'], wordids_1, wordcts_1, wordids_2, wordcts_2)
-        print(LD2)
+            print('---num_minibatch:%d---' % (j))
+            # Run single EM step
+            theta = algo.run_EM(ddict['batch_size'], wordids, wordcts)
 
-        # if i == some_iteration : --> save files
+            # Compute document sparsity
+            # sparsity = utilities.compute_sparsity(theta, theta.shape[0], theta.shape[1], 't')
+            # print("sparsity:", sparsity)
+
+            # Compute perplexities
+            LD2_fw = utilities.compute_perplexities_fw(algo.beta, ddict['iter_infer'], wordids_1, wordcts_1,wordids_2, wordcts_2)
+            LD2_vb = utilities.compute_perplexities_vb(algo.beta, ddict['alpha'], ddict['eta'], ddict['iter_infer'], wordids_1, wordcts_1, wordids_2, wordcts_2)
+            print(LD2_fw)
+            print(LD2_vb)
+
+            # List Tops Difference
+            # list_tops = utilities.list_top(algo.beta, ddict['tops'])
+            # utilities.print_diff_list_tops(list_tops, prev_list_tops)
+            # time.sleep(10)
+            # prev_list_tops = list_tops
+
+            # if i == some_iteration : --> save files
+        train_data.close()
 
     print('DONE!')
 

@@ -25,6 +25,6 @@ def print_topics(vocab_file, nwords, result_file):
 if __name__ == '__main__':
 
     list_tops = "./list_tops.txt"
-    vocab_file = "../../../preprocessing/vocab.txt"
+    vocab_file = "../../input-data/vocab.txt"
     result_file = "topn_output.txt"
     print_topics(vocab_file, list_tops, result_file)

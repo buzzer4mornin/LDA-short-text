@@ -1,11 +1,7 @@
 import sys
-import os
 import numpy as np
 import per_vb
-# import numpy_indexed
-import pandas as pd
-import pickle
-# from sklearn.model_selection import StratifiedKFold
+import per_fw
 import warnings
 
 warnings.filterwarnings("ignore")
@@ -56,10 +52,18 @@ def read_data_for_perpl(test_data_folder):
     wordids_2, wordcts_2 = read_data(filename_part2)
     return wordids_1, wordcts_1, wordids_2, wordcts_2
 
+
 def compute_perplexities_vb(beta, alpha, eta, max_iter, wordids_1, wordcts_1, wordids_2, wordcts_2):
     vb = per_vb.VB(beta, alpha, eta, max_iter)
     LD2 = vb.compute_perplexity(wordids_1, wordcts_1, wordids_2, wordcts_2)
     return LD2
+
+
+def compute_perplexities_fw(beta, max_iter, wordids_1, wordcts_1, wordids_2, wordcts_2):
+    fw = per_fw.FW(beta, max_iter)
+    LD2 = fw.compute_perplexity(wordids_1, wordcts_1, wordids_2, wordcts_2)
+    return LD2
+
 
 def read_setting(file_name):
     f = open(file_name, 'r')
@@ -72,15 +76,61 @@ def read_setting(file_name):
             continue
         set_val = settings[i].split(':')
         sets.append(set_val[0])
-        vals.append(float(set_val[1]))
+        try:
+            vals.append(float(set_val[1]))
+        except:
+            vals.append(str(set_val[1]))
     ddict = dict(zip(sets, vals))
     ddict['num_docs'] = int(ddict['num_docs'])
-    ddict['num_terms'] = int(ddict['num_terms'])
+    ddict['num_words'] = int(ddict['num_words'])
     ddict['num_topics'] = int(ddict['num_topics'])
+    ddict['batch_size'] = int(ddict['batch_size'])
     ddict['tops'] = int(ddict['tops'])
+    ddict['alpha'] = float(ddict['alpha'])
+    ddict['eta'] = float(ddict['eta'])
+    ddict['tau0'] = int(ddict['tau0'])
+    ddict['kappa'] = float(ddict['kappa'])
+    ddict['BOPE'] = str(ddict['BOPE'])
     ddict['iter_infer'] = int(ddict['iter_infer'])
     ddict['iter_train'] = int(ddict['iter_train'])
     return ddict
+
+
+def read_minibatch_list_frequencies(fp, batch_size):
+    wordids = list()
+    wordcts = list()
+    for i in range(batch_size):
+        line = fp.readline()
+        # check end of file
+        if len(line) < 5:
+            break
+        terms = str.split(line)
+        doc_length = int(terms[0])
+        ids = np.zeros(doc_length, dtype=np.int32)
+        cts = np.zeros(doc_length, dtype=np.int32)
+        for j in range(1, doc_length + 1):
+            term_count = terms[j].split(':')
+            ids[j - 1] = int(term_count[0])
+            cts[j - 1] = int(term_count[1])
+        wordids.append(ids)
+        wordcts.append(cts)
+    return wordids, wordcts
+
+
+def compute_sparsity(doc_tp, batch_size, num_topics, _type):
+    sparsity = np.zeros(batch_size, dtype=np.float)
+    if _type == 'z':
+        for d in range(batch_size):
+            N_z = np.zeros(num_topics, dtype=np.int)
+            N = len(doc_tp[d])
+            for i in range(N):
+                N_z[doc_tp[d][i]] += 1.
+            sparsity[d] = len(np.where(N_z != 0)[0])
+    else:
+        for d in range(batch_size):
+            sparsity[d] = len(np.where(doc_tp[d] > 1e-10)[0])
+    sparsity /= num_topics
+    return np.mean(sparsity)
 
 
 def write_topic_top(list_tops, file_name):
@@ -159,4 +209,3 @@ def write_file(output_folder, saved_outputs_folder, list_tops, algo):
     vocab_file = "./input-data/vocab.txt"
     result_file = f"{output_folder}/topn_output.txt"
     print_topics(vocab_file, list_tops, result_file)
-
