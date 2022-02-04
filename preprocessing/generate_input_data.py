@@ -175,4 +175,4 @@ def get_input_docs(test_size, test_obs_to_ho_ratio):
 
 if __name__ == '__main__':
     vocab, eng_comments = get_vocabulary()
-    get_input_docs(test_size=100, test_obs_to_ho_ratio=0.2)
+    get_input_docs(test_size=10, test_obs_to_ho_ratio=0.2)

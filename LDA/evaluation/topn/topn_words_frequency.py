@@ -18,5 +18,7 @@ def list_top(beta, tops):
 
 if __name__ == '__main__':
     beta = np.load("../../output-data/beta.npy")
+    # theta = np.load("../../output-data/theta.npy")
+    # print(theta.sum(axis=0)/sum(theta.sum(axis=0)))
     result_file = "./topn_output_frequency.txt"
     list_top(beta, 20)

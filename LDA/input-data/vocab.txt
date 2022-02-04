@@ -201,6 +201,7 @@ adap
 adapt
 adaptability
 adaptable
+adaptarse
 adaptation
 adaptations
 adapted
@@ -810,6 +811,7 @@ arranged
 arrangement
 arrangements
 arranging
+arrastramos
 arrive
 arrived
 arriving
@@ -1258,7 +1260,6 @@ beneath
 benefices
 beneficial
 beneficials
-beneficios
 beneficts
 benefiits
 benefit
@@ -1649,6 +1650,7 @@ buildings
 builds
 builiding
 built
+buisiness
 buisness
 bulding
 bulilding
@@ -1774,6 +1776,7 @@ camaraderie
 cambia
 cambian
 cambio
+cambios
 came
 camera
 cameras
@@ -2690,6 +2693,7 @@ consevertive
 consider
 considerable
 considerably
+considerar
 considerarion
 considerate
 consideration
@@ -3609,6 +3613,7 @@ diagnostic
 diagnostics
 dial
 dialog
+dialogo
 dialogue
 dialogues
 diaries
@@ -3683,6 +3688,7 @@ digitization
 digitize
 dignity
 digs
+dijital
 diligence
 diligent
 diligently
@@ -3855,6 +3861,7 @@ dislike
 dismal
 dismantling
 disminuido
+disminuir
 dismiss
 dismissals
 dismissed
@@ -4415,7 +4422,6 @@ empowernement
 empowernment
 empowers
 empowring
-empregado
 empresa
 emptiness
 empty
@@ -4684,6 +4690,7 @@ estimating
 estimations
 estos
 estress
+estrés
 está
 eternal
 eternally
@@ -4801,6 +4808,7 @@ excessive
 excessively
 exchange
 exchanges
+exchangeやldg
 excited
 excitement
 excites
@@ -5567,6 +5575,7 @@ fullfill
 fulltime
 fully
 fumes
+funcionarios
 funcitonal
 function
 functional
@@ -6123,6 +6132,7 @@ heroes
 heroic
 heroics
 heros
+herramientas
 hesitance
 hesitancy
 hesitant
@@ -6479,7 +6489,6 @@ implant
 imple
 implememted
 implement
-implementar
 implementation
 implementations
 implemented
@@ -6747,6 +6756,7 @@ inform
 informal
 information
 informations
+informationがどのようにhealthcare
 informative
 informed
 informing
@@ -7575,6 +7585,7 @@ liberty
 libraries
 library
 libtards
+licence
 license
 licensed
 licenses
@@ -7880,6 +7891,7 @@ mandatories
 mandatory
 mandos
 manegement
+manera
 maneuver
 maneuvered
 manger
@@ -7899,7 +7911,6 @@ manos
 manpower
 mantain
 mantenido
-manter
 mantra
 manual
 manually
@@ -8062,7 +8073,6 @@ mediums
 medlegal
 meds
 meehan
-meer
 meet
 meeting
 meetingless
@@ -8556,6 +8566,8 @@ needings
 needle
 needless
 needs
+needsにmeetし
+needsを深く理解し
 needy
 negate
 negating
@@ -8705,6 +8717,7 @@ notified
 notifying
 notion
 notorious
+noturno
 nourish
 nourished
 novartis
@@ -9043,6 +9056,7 @@ outbursts
 outcast
 outcome
 outcomes
+outcome向上に役立つのか
 outdated
 outdoor
 outer
@@ -10069,6 +10083,7 @@ privileges
 privy
 prized
 prizes
+proactiva
 proactive
 proactively
 proactiveness
@@ -10107,11 +10122,9 @@ processing
 processor
 processors
 procesure
-procesy
 procing
 procrastinates
 procrastination
-procurar
 procure
 procured
 procurement
@@ -10238,6 +10251,7 @@ proplr
 proponent
 proponha
 proporcionado
+proporcionando
 proportion
 proportional
 proportionally
@@ -10466,7 +10480,6 @@ radha
 radical
 radicalized
 radically
-radikálně
 radio
 radr
 rahway
@@ -10534,6 +10547,7 @@ reacting
 reaction
 reactionary
 reactions
+reactiva
 reactive
 reactively
 reactivity
@@ -10814,7 +10828,6 @@ regulatory
 rehashing
 rehire
 reign
-reigns
 reimagine
 reimaging
 reimagining
@@ -11714,7 +11727,6 @@ semester
 semi
 seminars
 semplification
-sempre
 senate
 senators
 sence
@@ -12735,6 +12747,7 @@ successors
 succinct
 succsessfull
 succumbing
+sucediendo
 sucess
 suchl
 suck
@@ -12833,7 +12846,6 @@ suppressing
 suppression
 supproting
 supprting
-supreme
 supremest
 supremist
 sure
@@ -14561,14 +14573,12 @@ younger
 yous
 youth
 youthful
-zaměřit
 zeal
 zeneca
 zenith
 zerbaxa
 zero
 zeta
-zjednodušovat
 zoetis
 zombie
 zone
@@ -14579,7 +14589,7 @@ zuprevo
 zurich
 évolutions
 ótima
-ในการทำ
+どのように社会に貢献するかをより意識し明確にしたほうがよいように思いました
 コロナ後のways
 理念を理解し
 真正落實d

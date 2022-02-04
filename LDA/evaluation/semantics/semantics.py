@@ -28,7 +28,7 @@ def random_picker(min_length):
             break
 
 
-#random_picker(min_length=20)
+random_picker(min_length=20)
 
 
 def topic_picker(which_topic, min_prop, max_length):
@@ -47,4 +47,4 @@ def topic_picker(which_topic, min_prop, max_length):
                 print(f"{topic_props[best]}% \n{auto_topics[best]}")
             break
 
-topic_picker(which_topic=2, min_prop=90, max_length=10)
+#topic_picker(which_topic=2, min_prop=90, max_length=10)
