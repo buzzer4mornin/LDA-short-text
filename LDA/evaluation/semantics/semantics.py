@@ -12,10 +12,10 @@ with open("./../../output-data/topn_output.txt", 'r', encoding='utf-8') as f:
     auto_topics = f.readlines()
 
 
-def random_picker(max_length):
+def random_picker(min_length):
     while True:
         i = randrange(len(eng_comments))
-        if len(eng_comments[i].split(" ")) < max_length:
+        if len(eng_comments[i].split(" ")) > min_length:
             print(f"\nCOMMENT:\n{eng_comments[i]}")
             # print(theta[i, :])
             topic_props = np.array(theta[i, :]) * 100
@@ -28,14 +28,14 @@ def random_picker(max_length):
             break
 
 
-random_picker(max_length=25)
+#random_picker(min_length=20)
 
 
 def topic_picker(which_topic, min_prop, max_length):
     which_topic -= 1  # changing into index based
     while True:
         i = randrange(len(eng_comments))
-        if len(eng_comments[i].split(" ")) < max_length and np.array(theta[i, :])[which_topic] * 100 > min_prop:
+        if len(eng_comments[i].split(" ")) > max_length and np.array(theta[i, :])[which_topic] * 100 > min_prop:
             print(f"\nCOMMENT:\n{eng_comments[i]}")
             # print(theta[i, :])
             topic_props = np.array(theta[i, :]) * 100
@@ -47,4 +47,4 @@ def topic_picker(which_topic, min_prop, max_length):
                 print(f"{topic_props[best]}% \n{auto_topics[best]}")
             break
 
-# topic_picker(which_topic=6, min_prop=90, max_length=15)
+topic_picker(which_topic=2, min_prop=90, max_length=10)

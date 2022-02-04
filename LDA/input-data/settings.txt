@@ -1,12 +1,12 @@
-num_docs: 21037
-num_words: 14614
+num_docs: 21046
+num_words: 14586
 num_topics: 15
-batch_size: 21037
+batch_size: 21046
 tops: 20
 alpha: 0.0666
 eta: 0.01
 tau0: 1
 kappa: 0.9
 BOPE: false
-iter_infer: 25
-iter_train: 25
+iter_infer: 50
+iter_train: 50

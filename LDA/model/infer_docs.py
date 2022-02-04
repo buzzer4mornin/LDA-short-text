@@ -75,7 +75,9 @@ class INFERENCE_fw:
 
 beta = np.load("../output-data/beta.npy")
 docs_file = f"../input-data/docs.txt"
+setting_file = f"../input-data/settings.txt"
+ddict = utilities.read_setting(setting_file)
 wordids, wordcts = utilities.read_data(docs_file)
-ml_ope = INFERENCE_fw(beta, 50)
-theta = ml_ope.e_step(21030, wordids, wordcts)
+ml_ope = INFERENCE_fw(beta, ddict["iter_infer"])
+theta = ml_ope.e_step(ddict["num_docs"], wordids, wordcts)
 np.save("../output-data/theta.npy", theta)

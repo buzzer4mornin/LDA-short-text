@@ -253,6 +253,7 @@ adjuvants
 admin
 administer
 administered
+administratif
 administration
 administrations
 administrativ
@@ -555,7 +556,6 @@ among
 amongst
 amount
 amounts
-ampla
 ample
 amplification
 amplified
@@ -637,7 +637,6 @@ answering
 answers
 antagonise
 antelliq
-antes
 anthony
 anti
 antibacterial
@@ -655,6 +654,7 @@ antigen
 antiquated
 antiretroviral
 antithetical
+antivirali
 antivirus
 antonomous
 anxiety
@@ -759,8 +759,6 @@ aprender
 april
 aproaches
 aprofundado
-aproveitadas
-aproveitamento
 apts
 apéro
 aquisiition
@@ -782,6 +780,7 @@ archivos
 arduous
 area
 areas
+aree
 arena
 arenas
 arent
@@ -1046,8 +1045,8 @@ awful
 awhile
 awkward
 awkwardness
-ayant
 aybe
+azienda
 azmi
 años
 babies
@@ -1650,7 +1649,6 @@ buildings
 builds
 builiding
 built
-buisiness
 buisness
 bulding
 bulilding
@@ -1821,8 +1819,6 @@ capabilities
 capability
 capable
 capably
-capacidade
-capaciteit
 capacities
 capacity
 capas
@@ -2143,7 +2139,6 @@ claimable
 claimed
 claiming
 claims
-claire
 claras
 clarification
 clarified
@@ -2416,7 +2411,6 @@ communications
 communicative
 communicaton
 communicator
-communiceren
 communincations
 communism
 communist
@@ -2453,7 +2447,6 @@ compass
 compassion
 compassionate
 compatability
-compatencia
 compatibility
 compatible
 compay
@@ -2713,7 +2706,6 @@ consistencies
 consistency
 consistenly
 consistent
-consistentes
 consistently
 consisting
 consists
@@ -2740,7 +2732,6 @@ constraint
 constraints
 construct
 constructed
-constructif
 construction
 constructive
 constructively
@@ -3127,7 +3118,6 @@ cultivate
 cultivating
 cultrue
 cultulal
-cultura
 cultural
 culturally
 culture
@@ -3503,7 +3493,6 @@ description
 descriptions
 desempeño
 desencourage
-desenvolvimento
 desert
 deserve
 deserved
@@ -3670,7 +3659,6 @@ diffused
 diffusion
 diffussion
 dificult
-difundir
 digest
 digested
 digging
@@ -3695,7 +3683,6 @@ digitization
 digitize
 dignity
 digs
-dijital
 diligence
 diligent
 diligently
@@ -4235,6 +4222,7 @@ economico
 economicos
 economics
 economies
+economis
 economists
 economy
 ecosystem
@@ -4418,8 +4406,6 @@ empleados
 emploees
 emplyed
 emplyees
-empoderamento
-empoderar
 empower
 empowered
 empowering
@@ -4433,7 +4419,6 @@ empregado
 empresa
 emptiness
 empty
-emsabados
 emulate
 enable
 enabled
@@ -4692,7 +4677,6 @@ establishing
 establishments
 estamos
 estate
-estender
 estimate
 estimated
 estimates
@@ -4986,7 +4970,6 @@ extensive
 extensively
 extent
 exterior
-externa
 external
 externalities
 externalize
@@ -5093,6 +5076,7 @@ fare
 farewell
 farm
 farmaceutical
+farmaci
 farmers
 farming
 farms
@@ -5434,7 +5418,6 @@ formula
 formulaic
 formulary
 formulating
-fornecer
 fornt
 forsaken
 forth
@@ -5584,7 +5567,6 @@ fullfill
 fulltime
 fully
 fumes
-funcionarios
 funcitonal
 function
 functional
@@ -5616,7 +5598,6 @@ furthest
 furture
 furure
 futile
-futur
 future
 futures
 futuristic
@@ -6823,6 +6804,7 @@ innovation
 innovationfor
 innovations
 innovative
+innovativi
 innovator
 innovators
 inoculations
@@ -6922,6 +6904,7 @@ insurance
 insurances
 insure
 insuring
+insurmontable
 insurmountable
 insurrection
 intact
@@ -7001,11 +6984,9 @@ internal
 internalized
 internallly
 internally
-internamente
 international
 internationally
 internet
-internos
 interns
 internships
 interoperability
@@ -8090,7 +8071,6 @@ meets
 mejor
 mejoramos
 melbourne
-melhor
 melhorias
 mellow
 member
@@ -8587,7 +8567,6 @@ neglect
 neglected
 neglecting
 negligible
-negocio
 negotations
 negotiable
 negotiate
@@ -8782,7 +8761,6 @@ obligated
 obligation
 obligations
 obliged
-obra
 obscure
 observable
 observant
@@ -8854,6 +8832,7 @@ officially
 officials
 offline
 offload
+offre
 offs
 offset
 offshore
@@ -8885,6 +8864,7 @@ onboarding
 onco
 oncoimmune
 oncol
+oncologia
 oncologist
 oncologists
 oncology
@@ -9038,6 +9018,7 @@ original
 originally
 originial
 orion
+oroduct
 oroptions
 orthogonally
 orwellian
@@ -9090,7 +9071,6 @@ outperformers
 outperforms
 output
 outputs
-outra
 outrank
 outreach
 outright
@@ -9710,7 +9690,6 @@ plant
 planted
 planting
 plants
-planの策定
 plastic
 plastics
 plate
@@ -9741,7 +9720,6 @@ plenty
 plethora
 plexiglass
 plodding
-plotados
 plough
 plug
 plugged
@@ -9840,7 +9818,6 @@ posed
 poses
 posibilites
 posing
-positif
 position
 positioned
 positioning
@@ -9849,7 +9826,6 @@ positive
 positively
 positives
 positivity
-possam
 possess
 possesses
 possession
@@ -10131,6 +10107,7 @@ processing
 processor
 processors
 procesure
+procesy
 procing
 procrastinates
 procrastination
@@ -10417,6 +10394,7 @@ quadrupled
 quads
 quagmire
 qualdocs
+quali
 qualification
 qualifications
 qualified
@@ -10488,6 +10466,7 @@ radha
 radical
 radicalized
 radically
+radikálně
 radio
 radr
 rahway
@@ -11190,7 +11169,6 @@ restarting
 restaurant
 restaurants
 rested
-rester
 resting
 restoration
 restore
@@ -11813,7 +11791,6 @@ settled
 settles
 setup
 setups
-seus
 seven
 several
 severance
@@ -12600,6 +12577,7 @@ strap
 strategic
 strategical
 strategically
+strategiche
 strategies
 strategise
 strategize
@@ -13002,7 +12980,6 @@ talants
 tale
 talent
 talented
-talentos
 talents
 talk
 talked
@@ -13332,7 +13309,6 @@ todd
 todo
 todos
 toeing
-toekennen
 together
 togetherness
 togethers
@@ -13512,6 +13488,7 @@ transport
 transportation
 transpsarent
 trap
+trapeutiche
 trapped
 traps
 tras
@@ -13829,7 +13806,6 @@ unhappy
 unhealthy
 unheard
 unhelpful
-unidades
 unified
 uniform
 uniformed
@@ -14055,14 +14031,12 @@ vain
 vaki
 valiant
 valid
-validar
 validate
 validated
 validation
 validations
 validity
 valleys
-valorizar
 valuable
 valuate
 valuation
@@ -14217,7 +14191,6 @@ virus
 viruses
 visa
 visable
-visando
 visas
 visibility
 visible
@@ -14237,7 +14210,6 @@ visualizations
 visualize
 visualizing
 visuals
-visão
 vital
 vitality
 vitamin
@@ -14589,12 +14561,14 @@ younger
 yous
 youth
 youthful
+zaměřit
 zeal
 zeneca
 zenith
 zerbaxa
 zero
 zeta
+zjednodušovat
 zoetis
 zombie
 zone
@@ -14605,10 +14579,8 @@ zuprevo
 zurich
 évolutions
 ótima
+ในการทำ
 コロナ後のways
-中長期の人員計画
-採用計画
 理念を理解し
 真正落實d
 積極的なjob
-適切な長期
