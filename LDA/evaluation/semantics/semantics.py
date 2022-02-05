@@ -4,13 +4,20 @@ from random import randrange
 global theta, eng_comments, auto_topics
 
 theta = np.load("./../../output-data/theta.npy")
-# print(theta.shape)
+print(theta.shape)
 
 with open("./../../input-data/eng_comments.txt", 'r', encoding='utf-8') as f:
-    eng_comments = f.readlines()
+   eng_comments = f.readlines()
 with open("./../../output-data/topn_output.txt", 'r', encoding='utf-8') as f:
-    auto_topics = f.readlines()
+   auto_topics = f.readlines()
 
+# theta = np.load("./../../saved-outputs/showcase_2/theta.npy")
+# print(theta.shape)
+#
+# with open("./../../saved-outputs/showcase_2/eng_comments.txt", 'r', encoding='utf-8') as f:
+#    eng_comments = f.readlines()
+# with open("./../../saved-outputs/showcase_2/topn_output.txt", 'r', encoding='utf-8') as f:
+#    auto_topics = f.readlines()
 
 def random_picker(min_length):
     while True:

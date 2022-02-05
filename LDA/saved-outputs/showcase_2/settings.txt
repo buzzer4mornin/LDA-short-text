@@ -8,6 +8,5 @@ eta: 0.01
 tau0: 1
 kappa: 0.9
 BOPE:  true
-
 iter_infer: 50
 iter_train: 50
