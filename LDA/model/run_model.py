@@ -66,8 +66,8 @@ def main():
 
     prev_list_tops = utilities.list_top(algo.beta, ddict['tops'])
 
+    start = time.time()
     print('START!')
-
     for i in range(1, ddict['iter_train'] + 1):
         print(f'\n*** iteration: {i} ***\n')
 
@@ -104,8 +104,10 @@ def main():
 
             # if i == some_iteration : --> save files
         train_data.close()
-
     print('DONE!')
+
+    end = time.time()
+    print("Total time spent:", end - start)
 
     # ----------------------------------------- Write Results ------------------------------------------------------
     list_tops = utilities.list_top(algo.beta, ddict['tops'])

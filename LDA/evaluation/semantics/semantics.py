@@ -7,9 +7,10 @@ theta = np.load("./../../output-data/theta.npy")
 print(theta.shape)
 
 with open("./../../input-data/eng_comments.txt", 'r', encoding='utf-8') as f:
-   eng_comments = f.readlines()
+    eng_comments = f.readlines()
 with open("./../../output-data/topn_output.txt", 'r', encoding='utf-8') as f:
-   auto_topics = f.readlines()
+    auto_topics = f.readlines()
+
 
 # theta = np.load("./../../saved-outputs/showcase_2/theta.npy")
 # print(theta.shape)
@@ -19,10 +20,10 @@ with open("./../../output-data/topn_output.txt", 'r', encoding='utf-8') as f:
 # with open("./../../saved-outputs/showcase_2/topn_output.txt", 'r', encoding='utf-8') as f:
 #    auto_topics = f.readlines()
 
-def random_picker(min_length):
+def random_picker(min_length, max_length):
     while True:
         i = randrange(len(eng_comments))
-        if len(eng_comments[i].split(" ")) > min_length:
+        if min_length < len(eng_comments[i].split(" ")) < max_length:
             print(f"\nCOMMENT:\n{eng_comments[i]}")
             # print(theta[i, :])
             topic_props = np.array(theta[i, :]) * 100
@@ -35,7 +36,7 @@ def random_picker(min_length):
             break
 
 
-random_picker(min_length=20)
+random_picker(min_length=10, max_length=35)
 
 
 def topic_picker(which_topic, min_prop, max_length):
@@ -54,4 +55,4 @@ def topic_picker(which_topic, min_prop, max_length):
                 print(f"{topic_props[best]}% \n{auto_topics[best]}")
             break
 
-#topic_picker(which_topic=2, min_prop=90, max_length=10)
+#topic_picker(which_topic=5, min_prop=60, max_length=10)
