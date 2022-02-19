@@ -88,8 +88,6 @@ def cleaner(obj):
     obj = re.sub(r"\S*\d\S*", "", obj).strip()  # remove words with numbers
     obj = RegexpTokenizer(r'\w{4,}').tokenize(obj)  # remove words of TODO: length < 4
     obj = [o for o in obj if o not in stop_words]  # remove stop-words
-    disregard = ["work", "working", "workings", "people", "company", "merck", "msd", "employ", "peop"]
-    obj = [o for o in obj if not any(d in o for d in disregard)]
     return obj
 
 
