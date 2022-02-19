@@ -1,4 +1,25 @@
-# LDA on short text - Pulse Survey 
+# Topic Modelling on short-text data 
+
+Extracting topics from a corpus of short-text data (e.g., survey answers, news titles, online chat records, blog comments) is considered as a difficult task for classical topic modelling approaches such as **LDA (Latent Dirichlet Allocation)**. This is because short-text is sparse data, and LDA's original statistical inference method works poorly on sparse data.
+
+In recent 2020 paper, authors proposed a novel MAP estimation algorithm, ***called BOPE***, which uses Bernoulli randomness for Online Maximum a Posteriori Estimation. In particular, BOPE implicitly employs a prior which plays as regularization, hence reducing severe overfitting for probabilistic models in ill-posed cases such as short-text.   
+
+
+Empirical evaluations of BOPE algorithm show its effectiveness on short-text data such as short texts such as survey answers, mobile short messages, news titles, online chat records, blog comments and etc.
+
+
+
+
+
+ 
+
+
+
+
+
+Probabilistic models such as LDA exploit statistical inference methods to discover latent patterns of data.
+
+to do with traditional Topic Modelling methods such as LDA (Latent Dirichlet Allocation).
 
 LDA performs well on long text data but its performance on short text data is not the best. Its underperformance on short text data is associated with its posterior inference algorithm - OPE (Online Maximum a Posteriori Estimation).
 In order to address disadvantage of OPE algorithm, one solution came from [recent paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9138369) around novel algorithm, called BOPE, which uses Bernoulli randomness for OPE.
