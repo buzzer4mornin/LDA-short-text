@@ -1,14 +1,23 @@
 # Topic Modelling on short-text data 
 
-Extracting topics from a corpus of short-text data (e.g., survey answers, news titles, online chat records, blog comments) is considered as a difficult task for classical topic modelling approaches such as **LDA (Latent Dirichlet Allocation)**. This is because short-text is sparse data, and LDA's original statistical inference method works poorly on sparse data.
+Extracting topics from a corpus of short-text data (e.g., survey answers, news titles, online chat records, blog comments) is considered as a difficult task for classical topic modelling approaches such as **LDA (Latent Dirichlet Allocation)**. This is because short-text is sparse data, and LDA's original MAP estimation algorithm works poorly on sparse data.
 
-In recent 2020 paper, authors proposed a novel MAP estimation algorithm, ***called BOPE***, which uses Bernoulli randomness for Online Maximum a Posteriori Estimation. In particular, BOPE implicitly employs a prior which plays as regularization, hence reducing severe overfitting for probabilistic models in ill-posed cases such as short-text.   
+In recent 2020 paper, authors proposed a novel MAP estimation algorithm, ***called BOPE***, which uses Bernoulli randomness for Online Maximum a Posteriori Estimation:
+- BOPE solves non-convex MAP problem via Bernoulli sampling and stochastic bounds. It is stochastic in nature and converges to a stationary point of the MAP problem at a rate of O(1/T) which is the state-of-the-art convergence rate, where T denotes the number of iterations.
+- In particular, the paper proves that Bernoulli randomness in BOPE plays the regularization role which reduces severe overfitting for probabilistic models in ill-posed cases such as short-text.
+
+For empirical evaluation purposes, authors adopt BOPE for solving MAP inference in LDA, and show its effectiveness on short-text data in comparison to other MAP inference methods. 
 
 
-Empirical evaluations of BOPE algorithm show its effectiveness on short-text data such as short texts such as survey answers, mobile short messages, news titles, online chat records, blog comments and etc.
 
 
 
+
+
+
+
+
+-------
 
 
  
