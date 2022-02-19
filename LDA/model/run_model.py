@@ -121,7 +121,7 @@ if __name__ == '__main__':
     import sys
     import time
     import pickle
-    from LDA import MyLDA
+    from LDA_BOPE import MyLDA
 
     NUM_THREADS = "1"
     os.environ["OMP_NUM_THREADS"] = NUM_THREADS

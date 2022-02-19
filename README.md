@@ -4,24 +4,27 @@ Extracting topics from a corpus of short-text data (e.g., survey answers, news t
 
 In recent 2020 paper, authors proposed a novel MAP estimation algorithm, ***called BOPE***, which uses Bernoulli randomness for Online Maximum a Posteriori Estimation:
 - BOPE solves non-convex MAP problem via Bernoulli sampling and stochastic bounds. It is stochastic in nature and converges to a stationary point of the MAP problem at a rate of O(1/T) which is the state-of-the-art convergence rate, where T denotes the number of iterations.
-- In particular, the paper proves that Bernoulli randomness in BOPE plays the regularization role which reduces severe overfitting for probabilistic models in ill-posed cases such as short-text.
+- In particular, it is proven that Bernoulli randomness in BOPE plays the regularization role which reduces severe overfitting for probabilistic models in ill-posed cases such as short-text.
 
-For empirical evaluation purposes, authors adopt BOPE for solving MAP inference in LDA, and show its effectiveness on short-text data in comparison to other MAP inference methods. 
-
-
-
-
-
-
-
-
-
+Taking these advantages into account, I used BOPE to solve MAP inference in LDA and assess its effectiveness on short-text data.
 
 -------
+The model is built from scratch on Python using libraries -- numpy, scipy, numba, pandas, matplotlib, NLTK.
 
+Project directories:
+```
+├── LDA
+│   ├── common
+│   ├── evaluation
+│   ├── input-data
+│   ├── model
+│   ├── output-data
+├── preprocessing 
+├── research_papers
+```
 
- 
-
+The model class is implemented in `./LDA/model/LDA_BOPE.py` and it is run via `./LDA/model/run_model.py`.
+Note that, before running the model, input data should be generated out of raw csv file via `./preprocessing/generate_input_data.py`.
 
 
 
