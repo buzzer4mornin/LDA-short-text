@@ -23,28 +23,74 @@ Project directories:
 ├── research_papers
 ```
 
-The model class is implemented in `./LDA/model/LDA_BOPE.py` and it is run via `./LDA/model/run_model.py`.
-Note that, before running the model, input data should be generated out of raw csv file via `./preprocessing/generate_input_data.py`.
+------------------------------------------------------------------------
+TABLE OF CONTENTS
+
+
+A. LEARNING 
+
+   1. SETTINGS FILE
+
+   2. DATA FILE FORMAT
+
+B. MEASURE
+
+C. PRINTING TOPICS
+
+
+------------------------------------------------------------------------
+A. LEARNING 
+
+The model class is implemented in `./LDA/model/LDA_BOPE.py` and it is run via `./LDA/model/run_model.py`. \
+Before running the model, input data should be generated out of raw csv file via `./preprocessing/generate_input_data.py`. During preparation of the input data, each document inside raw csv file is succinctly represented as a sparse vector of word counts. The input data is a file where each line is of the form:
+
+     [M] [term_1]:[count] [term_2]:[count] ...  [term_N]:[count]
+
+where [M] is the number of unique terms in the document, and the [count] associated with each term is how many times that term appeared in the document.  Note that [term_1] is an integer which indexes the term; it is not a string.
+
+------------------------------------------------------------------------
+
+B. MEASURE
+
+Perplexity is a popular measure to see predictiveness and generalization of a topic model.
+
+In order to compute perplexity of the model, testing data is needed. Each document in the testing data is randomly divided into two disjoint part w_obs and w_ho with the ratio 80:20
+They are stored in [input-data folder] with corresponding file name is of the form:
+
+data_test_part_1.txt\
+data_test_part_2.txt
+
+------------------------------------------------------------------------
+
+C. PRINTING TOPICS
+
+The Python script topics.py lets you print out the top N
+words from each topic in a .topic file.  Usage is:
+
+     python topics.py [beta file] [vocab file] [n words] [result file]
 
 
 
 
-Probabilistic models such as LDA exploit statistical inference methods to discover latent patterns of data.
 
-to do with traditional Topic Modelling methods such as LDA (Latent Dirichlet Allocation).
 
-LDA performs well on long text data but its performance on short text data is not the best. Its underperformance on short text data is associated with its posterior inference algorithm - OPE (Online Maximum a Posteriori Estimation).
-In order to address disadvantage of OPE algorithm, one solution came from [recent paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9138369) around novel algorithm, called BOPE, which uses Bernoulli randomness for OPE.
 
-For empirical evaluations, paper uses BOPE and many other previous algorithms (OPE, VB, CVB0, CGS) on datasets with different average length per document:
 
-| Datasets       | Corpus size  | Average length per doc  | Vocabulary size|
-| :------------- | :----------: | -----------: |-----------: |
-| New York Times | 300,000   | 325.13    | 102,661 |
-| PubMed | 330,000 | 65.12 | 141,044 |
-| Yahoo Questions | 517,770 | 4.73 | 24,420 | 
-| Twitter tweets | 1,457,687 | 10.14 | 89,474 | 
-| NYT-Titles | 1,664,127 | 5.15 | 55,488 | 
+
+
+
+
+
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
 
 &nbsp;
 &nbsp;
@@ -57,14 +103,4 @@ For empirical evaluations, paper uses BOPE and many other previous algorithms (O
 - Normalised Pointwise Mutual Information (NPMI): 
 
     NPMI measurements helps us to see the coherence or seman- tic quality of individual topics. According to [this paper](https://www.ams.org/journals/tran/1943-054-03/S0002-9947-1943-0009263-7/S0002-9947-1943-0009263-7.pdf), NPMI agrees well with human evaluation on interpretability of topic models.
-
-
-#### **Comparison of results:**
-
-![s1](./screenshot-1.png)
-
-&nbsp;
-&nbsp;
-
-As seen above, BOPE shows higher results across the different datasets. 
 
