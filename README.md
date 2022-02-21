@@ -1,6 +1,6 @@
 # Topic Modelling on short-text data 
 
-Extracting topics from a corpus of short-text data (e.g., survey answers, news titles, online chat records, blog comments) is considered as a difficult task for classical topic modelling approaches such as **LDA (Latent Dirichlet Allocation)**. This is because short-text is sparse data, and LDA's original MAP estimation algorithm works poorly on sparse data.
+Extracting topics from a corpus of short-text data (e.g., survey answers, news titles, online chat records, blog comments) is considered a difficult task for classical topic modelling approaches such as **LDA (Latent Dirichlet Allocation)**. This is because short-text is sparse data, and LDA's original MAP estimation algorithm works poorly on sparse data.
 
 In recent 2020 paper, authors proposed a novel MAP estimation algorithm, ***called BOPE***, which uses Bernoulli randomness for Online Maximum a Posteriori Estimation:
 - BOPE solves non-convex MAP problem via Bernoulli sampling and stochastic bounds. It is stochastic in nature and converges to a stationary point of the MAP problem at a rate of O(1/T) which is the state-of-the-art convergence rate, where T denotes the number of iterations.
@@ -69,7 +69,8 @@ words from each topic in a .topic file.  Usage is:
 
      python topics.py [beta file] [vocab file] [n words] [result file]
 
-
+https://rtyley.github.io/bfg-repo-cleaner/
+https://stackoverflow.com/questions/36828214/hiding-commit-from-github
 
 
 
