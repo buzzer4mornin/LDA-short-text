@@ -29,13 +29,8 @@ TABLE OF CONTENTS
 
 A. LEARNING 
 
-   1. SETTINGS FILE
-
-   2. DATA FILE FORMAT
 
 B. MEASURE
-
-C. PRINTING TOPICS
 
 
 ------------------------------------------------------------------------
@@ -61,47 +56,3 @@ data_test_part_1.txt\
 data_test_part_2.txt
 
 ------------------------------------------------------------------------
-
-C. PRINTING TOPICS
-
-The Python script topics.py lets you print out the top N
-words from each topic in a .topic file.  Usage is:
-
-     python topics.py [beta file] [vocab file] [n words] [result file]
-
-https://rtyley.github.io/bfg-repo-cleaner/
-https://stackoverflow.com/questions/36828214/hiding-commit-from-github
-
-
-
-
-
-
-
-
-
-
-
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-&nbsp;
-
-#### Performance Measures:
-- Log Predictive Probability (LPP):
-
-    Predictive Probability shows the predictiveness and generalization of a model M on new data. We follow the procedure in [this paper](https://arxiv.org/pdf/1206.6425.pdf) to compute this measurement. 
-
-- Normalised Pointwise Mutual Information (NPMI): 
-
-    NPMI measurements helps us to see the coherence or seman- tic quality of individual topics. According to [this paper](https://www.ams.org/journals/tran/1943-054-03/S0002-9947-1943-0009263-7/S0002-9947-1943-0009263-7.pdf), NPMI agrees well with human evaluation on interpretability of topic models.
-
